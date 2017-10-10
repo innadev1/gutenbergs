@@ -1,0 +1,25 @@
+footer{
+	background-color: #484c3e;
+	height: auto;
+	text-align: center;
+}
+#footer_logo img{
+	width: 4.5vw;
+	padding-top: 1.5vw;
+}
+#footer_links{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	justify-content: center;
+	padding-bottom: 1vw;
+}
+#footer_links p{
+	color: black;
+    font-size: 0.8vw;
+    padding: 0.5vw;
+}
+@media screen and (max-width: 900px){
+}
