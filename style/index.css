@@ -133,17 +133,20 @@ h2{
 ::-moz-placeholder          {color:grey;}/* Firefox 19+ */
 :-moz-placeholder           {color:grey;}/* Firefox 18- */
 :-ms-input-placeholder      {color:grey;}
-#third div button{
+#button-input{
 	background-color: #b0915d;
     font-family: 'Roboto', sans-serif;
-    color: rgba(255,255,255,1);
     font-size: 0.8vw;
     letter-spacing: 0.1vw;
     text-transform: uppercase;
-    border: 1px solid #b0915d;
-    padding: 0.5vw 2vw;
     cursor: pointer;
-	height: 100%;
+    width: 5vw !important;
+	text-align: center;
+}
+.blackbutton{
+	text-transform: uppercase;
+	color: rgba(255,255,255,1) !important;
+	cursor: pointer;
 }
 .b-1{background-image: url(../img/gal/1.jpg);}
 .b-2{background-image: url(../img/gal/2.jpg);}
@@ -152,5 +155,16 @@ h2{
 .b-5{background-image: url(../img/gal/5.jpg);}
 .b-6{background-image: url(../img/gal/6.jpg);}
 .b-7{background-image: url(../img/gal/7.jpg);}
+.checkmail h2{
+	text-align: center;
+    font-family: "Roboto", sans-serif !important;
+    color: rgb(72, 76, 62);
+    text-transform: uppercase;
+    margin: 1vw;
+    margin-top: 0.5vw;
+    font-weight: 300 !important;
+    letter-spacing: 0.1vw;
+	font-size: 12px !important;
+}
 @media screen and (max-width: 900px){
 }
