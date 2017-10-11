@@ -1,3 +1,78 @@
+<?php
+
+
+	$error_message_n = "";
+	$error_message_n2 = "";
+	$error_message_em = "";
+	$error_message_text = "";
+	$mailSuccess = false;
+
+
+	if(isset($_POST['submit'])) {
+		$to = 'my.worktest94@gmail.com';
+
+		$name = $_POST["name"];
+		$email = $_POST["email"];
+		$text = $_POST["text"];
+
+
+		$error_message_n = "";
+		$error_message_n2 = "";
+		$error_message_em = "";
+		$error_message_text = "";
+
+		$mailSuccess = false;
+
+		$errors = ['name'=>0, 'email'=>0, 'text'=>0];
+		$email_exp_a = "/[^A-Za-z]/";
+
+		// Name
+		if(strlen($name) < 2) {
+        	$error_message_n .= '<p style = "color: red;">Name too short.</p>';
+			$errors['name'] = 1;
+		}
+		
+		if(preg_match($email_exp_a,$_POST["name"])) {
+			$error_message_n2 .= '<p style = "color: red;">only alphabet!</p>';
+			$errors['name'] = 1;
+		}
+
+
+		// EMAIL 
+		$error_message = "";
+    	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+	
+    	if(!preg_match($email_exp,$email)) {
+        	$error_message_em .= '<p style = "color: red;">Please enter email!</p>';
+			$errors['email'] = 1;
+		}
+
+
+		if(empty($text)){
+			$error_message_text .= '<p style = "color: red;">Please enter your question!</p>';
+			$errors['text'] = 1;
+		}
+
+		if(empty($error_message_n) && empty($error_message_n2) && empty($error_message_em) && empty($error_message_text) ) 
+		{
+			$subject = 'the subject';
+			$headers = '';
+
+			$message = "Name:" . " " . $name . "\r\n" . "Email:" . " " . $email. "\r\n" . "Question:" . " " . $text;
+
+			if(mail($to, $subject, $message, $headers)){
+				
+				$mailSuccess = true;
+
+			}
+		}
+	}
+?>
+
+
+
+
+
 <html>
     <head>     
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
@@ -61,13 +136,31 @@
 			<img src="img/1.png">
 			<h2>Have any question?</h2>
 		</div>
-		
-		<div class="wrap" id="third">
-			<div><input type="text" placeholder="name"></input></div>
-			<div><input type="text" placeholder="email"></input></div>
-			<div><input type="text" placeholder="question"></input></div>
-			<div><button>send</button></div>
-		</div>
+
+		<?php if(!$mailSuccess){ ?>
+			<form id="form" name="orderform" method="post" action="index.php">
+				<div class="wrap" id="third">
+					<div><input type="text" value = "<?php if(isset($_POST['name']) && $errors['name'] == 0){ echo $_POST['name']; } ?>" name="name" placeholder="name"></input></div>
+					<?php echo ($error_message_n); ?>
+					<?php echo ($error_message_n2); ?>
+					<div><input type="text" value = "<?php if(isset($_POST['email']) && $errors['email'] == 0){ echo $_POST['email']; } ?>" name="email" placeholder="email"></input></div>
+					<?php echo ($error_message_em); ?>
+					<div><input type="text" value = "<?php if(isset($_POST['text']) && $errors['text'] == 0){ echo $_POST['text']; } ?>" name="text" placeholder="question"></input></div>
+					<?php echo ($error_message_text); ?>
+
+
+					<input class="blackbutton" type="submit" id="submit" name="submit" value="send">
+				</div>
+
+
+			</form>
+				<?php				
+			}else{
+				
+				?>
+					<div class = "checkmail"><h1>Check your mail!</h1></div>
+				
+			<?php } ?>
 		
 		<div class="header">
 			<img src="img/1.png">
