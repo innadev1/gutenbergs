@@ -28,12 +28,12 @@
 
 		// Name
 		if(strlen($name) < 2) {
-        	$error_message_n .= '<p style = "color: red;">Name too short.</p>';
+        	$error_message_n .= '<p style = "color: red; padding: 0 1vw 0 1vw;">Name too short.</p>';
 			$errors['name'] = 1;
 		}
 		
 		if(preg_match($email_exp_a,$_POST["name"])) {
-			$error_message_n2 .= '<p style = "color: red;">only alphabet!</p>';
+			$error_message_n2 .= '<p style = "color: red; padding: 0 1vw 0 1vw;">only alphabet!</p>';
 			$errors['name'] = 1;
 		}
 
@@ -43,13 +43,13 @@
     	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 	
     	if(!preg_match($email_exp,$email)) {
-        	$error_message_em .= '<p style = "color: red;">Please enter email!</p>';
+        	$error_message_em .= '<p style = "color: red; padding: 0 1vw 0 1vw;">Please enter email!</p>';
 			$errors['email'] = 1;
 		}
 
 
 		if(empty($text)){
-			$error_message_text .= '<p style = "color: red;">Please enter your question!</p>';
+			$error_message_text .= '<p style = "color: red; padding: 0 1vw 0 1vw;">Please enter your question!</p>';
 			$errors['text'] = 1;
 		}
 
@@ -156,7 +156,7 @@
 			}else{
 				
 				?>
-					<div class = "checkmail"><h1>Check your mail!</h1></div>
+					<div class = "checkmail"><h2>Check your mail!</h2></div>
 				
 			<?php } ?>
 		
