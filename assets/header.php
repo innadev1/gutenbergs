@@ -10,7 +10,8 @@ $error_message_rooms2 = "";
 
 
 
-if(isset($_GET['submit'])) {
+
+if(isset($_GET['submit_two'])) {
 	$to = 'my.worktest94@gmail.com';
 
 	$error_message_df = "";
@@ -21,56 +22,56 @@ if(isset($_GET['submit'])) {
 	$error_message_rooms = "";
 	$error_message_rooms2 = "";
 
-	$datefrom = $_POST["datefrom"];
-	$dateto = $_POST["dateto"];
-	$people = $_POST["people"];
-	$rooms = $_POST["rooms"];
+	$check_in_date = $_GET["check_in_date"];
+	$check_out_date = $_GET["check_out_date"];
+	$adults = $_GET["number_adults"];
+	$childrens = $_GET["number_children"];
 
-	$errors = ['datefrom'=>0,'dateto'=>0, 'people'=>0, 'rooms'=>0];
+	$errors = ['check_in_date'=>0,'check_out_date'=>0, 'number_adults'=>0, 'number_children'=>0];
 
 	// Date
-	if(empty($datefrom)) {
+	if(empty($check_in_date)) {
 		$error_message_df .= '<p style = "color: red;">Please enter date.</p>';
-		$errors['datefrom'] = 1;
+		$errors['check_in_date'] = 1;
 	}
 
-	if(empty($dateto)) {
+	if(empty($check_out_date)) {
 		$error_message_dt .= '<p style = "color: red;">Please enter date.</p>';
-		$errors['dateto'] = 1;
+		$errors['check_out_date'] = 1;
 	}
 
-	if($datefrom > $dateto ){
+	if($check_in_date > $check_out_date ){
 		$error_message_no .= '<p style = "color: red;">Going back in time impossible.</p>';
-		$errors['datefrom'] = 1;
-		$errors['dateto'] = 1;
+		$errors['check_in_date'] = 1;
+		$errors['check_out_date'] = 1;
 	}
 
-	// People
-	if(strlen($people) < 1){
+	// adults
+	if(strlen($adults) < 1){
 		$error_message_peo .= '<p style = "color: red;">Enter number of peoples.</p>';
-		$errors['people'] = 1;
+		$errors['number_adults'] = 1;
 	}
 
 	$error_message = "";
 	$email_exp_n = "/[^0-9]/";
 
-	if(preg_match($email_exp_n,$_POST["people"])) {
+	if(preg_match($email_exp_n,$_GET["number_adults"])) {
 		$error_message_peo2 .= '<p style = "color: red;">only numbers!</p>';
-		$errors['people'] = 1;
+		$errors['number_adults'] = 1;
 	}
 
-	// Rooms
-	if(strlen($rooms) < 1){
-		$error_message_room .= '<p style = "color: red;">Enter number of peoples.</p>';
-		$errors['rooms'] = 1;
+	// childrens
+	if(strlen($childrens) < 1){
+		$error_message_rooms .= '<p style = "color: red;">Enter number of peoples.</p>';
+		$errors['number_children'] = 1;
 	}
 
 	$error_message = "";
 	$email_exp_n = "/[^0-9]/";
 
-	if(preg_match($email_exp_n,$_POST["rooms"])) {
-		$error_message_room2 .= '<p style = "color: red;">only numbers!</p>';
-		$errors['rooms'] = 1;
+	if(preg_match($email_exp_n,$_GET["number_children"])) {
+		$error_message_rooms2 .= '<p style = "color: red;">only numbers!</p>';
+		$errors['number_children'] = 1;
 	}
 
 }
@@ -96,26 +97,107 @@ if(isset($_GET['submit'])) {
 		</ul>
 	</div>
 
+	<meta charset = "utf-8">
+      	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+	<!-- Javascript -->
+		<script>
+         	$(function() {
+            	$( "#datepicker-10" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1],
+					dateFormat: "yy-mm-dd"
+            	});
+         	});
+      	</script>
+
+		<script>
+         	$(function() {
+            	$( "#datepicker-11" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1],
+					dateFormat: "yy-mm-dd"
+            	});
+         	});
+      	</script>
+
+		<script>
+         	$(function() {
+            	$( "#datepicker-12" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1],
+					dateFormat: "yy-mm-dd"
+            	});
+         	});
+      	</script>
+
+		<script>
+         	$(function() {
+            	$( "#datepicker-13" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1],
+					dateFormat: "yy-mm-dd"
+            	});
+         	});
+      	</script>
+
 </header>
 
-	<div id="checkout">
-		<div class="checkout">
-			<h1>Check in</h1>
-			<p>15 Aug</p>
-		</div>
-		<div class="checkout">
-			<h1>Check out</h1>
-			<p>20 Aug</p>
-		</div>
-		<div class="checkout">
-			<h1>Guests</h1>
-			<p>2</p>
-		</div>
-		<div class="checkout">
-			<h1>Rooms</h1>
-			<p>1</p>
-		</div>
-		<div class="checkout" style="padding:0;">
-			<button>BOOK</button>
-		</div>
-	</div>
+	
+
+		<form id="form" name="orderform" method="get" action="index.php">
+			<div id="checkout">
+			
+				<div class="checkout">
+					<label>FROM:</label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_in_date']) && $errors['check_in_date'] == 0 ){ echo $_GET['check_in_date']; } ?>" name="check_in_date" type = "text" readonly="readonly" id = "datepicker-10"></spam>
+					<?php echo ($error_message_df); ?>
+					<?php echo ($error_message_no); ?>
+				</div>
+
+				<div class="checkout">
+					<label>TO:</label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_out_date']) && $errors['check_out_date'] == 0){ echo $_GET['check_out_date']; } ?>" name="check_out_date" type = "text" readonly="readonly" id = "datepicker-11"></spam>
+					<?php echo ($error_message_dt); ?>
+					<?php echo ($error_message_no); ?>
+				</div>
+
+
+				<div class="checkout">
+					<a>Adults: <span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_adults']) && $errors['number_adults'] == 0){ echo $_GET['number_adults']; } ?>" name="number_adults" class="wpcf7-date" placeholder="adults" style="width: 4.5vw;"></span></a>
+					<?php echo ($error_message_peo); ?>
+					<?php echo ($error_message_peo2); ?>
+				</div>
+
+
+				<div class="checkout">
+					<a>Childrens: <span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_children']) && $errors['number_children'] == 0){ echo $_GET['number_children']; } ?>" name="number_children" class="wpcf7-date" placeholder="childrens"></span></a>
+					<?php echo ($error_message_rooms); ?>
+					<?php echo ($error_message_rooms2); ?>
+				</div>
+
+
+				<div class="checkout" style="padding:0;">
+
+				
+				<?php
+					if(!empty($_GET)){
+
+						header("Location:https://app.thebookingbutton.com/properties/hgutenbergsdirect?locale=en&check_in_date=".$_GET['check_in_date']."&check_out_date=".$_GET['check_out_date']."&number_adults=".$_GET['number_adults']."&number_children=".$_GET['number_children']);
+				
+					}
+				?>
+					<input class="blackbutton" type="submit" id="submit" name="submit_two" value="Send">
+				</div>
+			</div>
+		</form>
+
