@@ -146,6 +146,7 @@ h2{
 .blackbutton{
 	text-transform: uppercase;
 	color: rgba(255,255,255,1) !important;
+	cursor: pointer;
 }
 .b-1{background-image: url(../img/gal/1.jpg);}
 .b-2{background-image: url(../img/gal/2.jpg);}
