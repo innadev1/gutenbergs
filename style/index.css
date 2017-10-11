@@ -133,17 +133,19 @@ h2{
 ::-moz-placeholder          {color:grey;}/* Firefox 19+ */
 :-moz-placeholder           {color:grey;}/* Firefox 18- */
 :-ms-input-placeholder      {color:grey;}
-#third div button{
+#button-input{
 	background-color: #b0915d;
     font-family: 'Roboto', sans-serif;
-    color: rgba(255,255,255,1);
     font-size: 0.8vw;
     letter-spacing: 0.1vw;
     text-transform: uppercase;
-    border: 1px solid #b0915d;
-    padding: 0.5vw 2vw;
     cursor: pointer;
-	height: 100%;
+    width: 5vw !important;
+	text-align: center;
+}
+.blackbutton{
+	text-transform: uppercase;
+	color: rgba(255,255,255,1) !important;
 }
 .b-1{background-image: url(../img/gal/1.jpg);}
 .b-2{background-image: url(../img/gal/2.jpg);}

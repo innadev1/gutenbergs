@@ -147,9 +147,7 @@
 					<?php echo ($error_message_em); ?>
 					<div><input type="text" value = "<?php if(isset($_POST['text']) && $errors['text'] == 0){ echo $_POST['text']; } ?>" name="text" placeholder="question"></input></div>
 					<?php echo ($error_message_text); ?>
-
-
-					<input class="blackbutton" type="submit" id="submit" name="submit" value="send">
+					<div id="button-input"><input class="blackbutton" type="submit" id="submit" name="submit" value="send"></div>
 				</div>
 
 
