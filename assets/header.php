@@ -160,33 +160,33 @@ if(isset($_GET['submit_two'])) {
 			<div id="checkout">
 			
 				<div class="checkout">
-					<label>FROM:</label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_in_date']) && $errors['check_in_date'] == 0 ){ echo $_GET['check_in_date']; } ?>" name="check_in_date" type = "text" readonly="readonly" id = "datepicker-10"></spam>
+					<label><h1>Check in</h1></label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_in_date']) && $errors['check_in_date'] == 0 ){ echo $_GET['check_in_date']; } ?>" name="check_in_date" type = "text" readonly="readonly" id = "datepicker-10"></spam>
 					<?php echo ($error_message_df); ?>
 					<?php echo ($error_message_no); ?>
 				</div>
 
 				<div class="checkout">
-					<label>TO:</label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_out_date']) && $errors['check_out_date'] == 0){ echo $_GET['check_out_date']; } ?>" name="check_out_date" type = "text" readonly="readonly" id = "datepicker-11"></spam>
+					<label><h1>Check out</h1></label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_out_date']) && $errors['check_out_date'] == 0){ echo $_GET['check_out_date']; } ?>" name="check_out_date" type = "text" readonly="readonly" id = "datepicker-11"></spam>
 					<?php echo ($error_message_dt); ?>
 					<?php echo ($error_message_no); ?>
 				</div>
 
 
 				<div class="checkout">
-					<a>Adults: <span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_adults']) && $errors['number_adults'] == 0){ echo $_GET['number_adults']; } ?>" name="number_adults" class="wpcf7-date" placeholder="adults" style="width: 4.5vw;"></span></a>
+					<a><h1>Adults</h1><span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_adults']) && $errors['number_adults'] == 0){ echo $_GET['number_adults']; } ?>" name="number_adults" class="wpcf7-date"></span></a>
 					<?php echo ($error_message_peo); ?>
 					<?php echo ($error_message_peo2); ?>
 				</div>
 
 
 				<div class="checkout">
-					<a>Childrens: <span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_children']) && $errors['number_children'] == 0){ echo $_GET['number_children']; } ?>" name="number_children" class="wpcf7-date" placeholder="childrens"></span></a>
+					<a><h1>Children</h1><span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_children']) && $errors['number_children'] == 0){ echo $_GET['number_children']; } ?>" name="number_children" class="wpcf7-date"></span></a>
 					<?php echo ($error_message_rooms); ?>
 					<?php echo ($error_message_rooms2); ?>
 				</div>
 
 
-				<div class="checkout" style="padding:0;">
+				<div class="checkout" id="button" style="padding:0;">
 
 				
 				<?php
@@ -196,7 +196,7 @@ if(isset($_GET['submit_two'])) {
 				
 					}
 				?>
-					<input class="blackbutton" type="submit" id="submit" name="submit_two" value="Send">
+					<input class="blackbutton" type="submit" id="submit" name="submit_two" value="book">
 				</div>
 			</div>
 		</form>
