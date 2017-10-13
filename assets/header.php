@@ -83,8 +83,7 @@ if(isset($_GET['submit_two'])) {
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 
-
-<header id="head">
+<header>
 
 	<div id="logo"><a href="index.php"><img src="img/logo.png"></a></div>
 
@@ -99,7 +98,7 @@ if(isset($_GET['submit_two'])) {
 			<li><a>en</a></li>
 		</ul>
 	</div>
-	
+
 	<div class="round_buttons">
 		<button id="flip_1"></button>
 		<button id="flip_2"></button>
@@ -134,7 +133,7 @@ if(isset($_GET['submit_two'])) {
 			})
 		});
 	</script>
-
+	
 	<meta charset = "utf-8">
       	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
          rel = "stylesheet">
