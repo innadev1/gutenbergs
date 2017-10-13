@@ -96,6 +96,41 @@ if(isset($_GET['submit_two'])) {
 			<li><a>en</a></li>
 		</ul>
 	</div>
+	
+	<div class="round_buttons">
+		<button id="flip_1"></button>
+		<button id="flip_2"></button>
+		<button id="flip_3"></button>
+	</div>
+	<style>
+		.round_buttons{
+			text-align: center;
+			margin-top: 30vw;
+		}
+		.round_buttons button{
+			background-color: white;
+			border: none;
+			padding: 0.4vw;
+			cursor: pointer;
+			border-radius: 3vw;
+			opacity: 0.5;
+			margin: 0.2vw;
+		}
+	</style>
+							
+	<script>
+		$(document).ready(function(){
+			$('#flip_1').click(function(){
+				$('header').css('background-image','url(img/banner.jpg)')
+			})
+			$('#flip_2').click(function(){
+				$('header').css('background-image','url(img/banner2.jpg)')
+			})
+			$('#flip_3').click(function(){
+				$('header').css('background-image','url(img/banner3.jpg)')
+			})
+		});
+	</script>
 
 	<meta charset = "utf-8">
       	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
