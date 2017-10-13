@@ -1,7 +1,7 @@
 #head{
     background-image: url(../img/background_2.jpg) !important;
 }
-.round_buttons {
+.round_buttons, #form {
     display: none;
 }
 #main{
