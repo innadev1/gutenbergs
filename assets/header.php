@@ -89,13 +89,15 @@ if(isset($_GET['submit_two'])) {
 
 	<div id="navigation">
 		<ul class="navigation">
-			<li><a>about us</a></li>
+			<li><a href="index.php">about us</a></li>
 			<li><a href="rooms.php">rooms</a></li>
 			<li><a>restaurant</a></li>
-			<li><a>conference hall</a></li>
+			<li><a href="conference_hall.php">conference hall</a></li>
 			<li><a>contacts</a></li>
 			<li><a>reservation</a></li>
 			<li><a>en</a></li>
+			<li><a>lv</a></li>
+			<li><a>ru</a></li>
 		</ul>
 	</div>
 

@@ -47,13 +47,13 @@ header{
 }
 .cont h1{
 	font-size: 1.4vw;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: rgb(176, 145, 93);
     letter-spacing: 0.1vw;
     text-align: left;
     text-transform: uppercase;
     margin: 0;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.7vw;
 }
 .cont p{
