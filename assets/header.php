@@ -91,10 +91,10 @@ if(isset($_GET['submit_two'])) {
 		<ul class="navigation">
 			<li><a href="index.php">about us</a></li>
 			<li><a href="rooms.php">rooms</a></li>
-			<li><a href="restaurant.php">restaurant</a></li>
+			<li><a href="http://restaurant-gutenbergs.lv/">restaurant</a></li>
 			<li><a href="conference_hall.php">conference hall</a></li>
-			<li><a href="contacts.php">contacts</a></li>
-			<li><a href="reservation.php">reservation</a></li>
+			<li><a href="index.php#contact_us">contacts</a></li>
+			<li><a href="https://app.thebookingbutton.com/properties/hgutenbergsdirect">reservation</a></li>
 			<li><a>en</a></li>
 			<li><a>lv</a></li>
 			<li><a>ru</a></li>
