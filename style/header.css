@@ -75,7 +75,7 @@ header{
 	box-shadow: 0 0 30px rgba(0,0,0,0.3);
 }
 .checkout {
-    padding: 1vw;
+    padding-top: 1vw;
     cursor: pointer;
     color: rgb(168, 168, 168);
     width: 20%;
@@ -135,4 +135,63 @@ header{
 }
 }
 @media screen and (max-width: 900px){
+header {
+    background-image: url(../img/banner_mobile.jpg);
+    height: 160vw;
+}
+#navigation {
+    top: 0;
+    padding-right: 0;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+#logo img {
+    width: 25vw;
+}
+.navigation{display:none;}
+#checkout {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    top: -15vw;
+}
+.checkout{
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15vw;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.checkout h1{
+	font-size: 2.3vw;
+    opacity: 0.8;
+	margin-left: 13vw;
+}
+.checkout span{
+	margin-right: 13vw;
+}
+#button input {
+    height: 15vw;
+	font-size: 5vw;
+    font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	color: #e0a755!important;
+	-webkit-appearance: none;
+}
+.checkout input {
+    width: 22vw;
+    height: 7vw;
+    font-size: 3vw;
+	-webkit-appearance: none;
+}
 }

@@ -80,8 +80,9 @@ if(isset($_GET['submit_two'])) {
 
 <link rel="stylesheet" type="text/css" href="style/header.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700&amp;subset=cyrillic" rel="stylesheet">
 
 <header>
 
@@ -164,27 +165,27 @@ if(isset($_GET['submit_two'])) {
 			<div id="checkout">
 			
 				<div class="checkout">
-					<label><h1>Check in</h1></label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_in_date']) && $errors['check_in_date'] == 0 ){ echo $_GET['check_in_date']; } ?>" name="check_in_date" type = "text" readonly="readonly" id = "datepicker-10"></spam>
+					<label><h1>Check in</h1></label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_in_date']) && $errors['check_in_date'] == 0 ){ echo $_GET['check_in_date']; } ?>" name="check_in_date" type = "text" readonly="readonly" id = "datepicker-10"></span>
 					<?php echo ($error_message_df); ?>
 					<?php echo ($error_message_no); ?>
 				</div>
 
 				<div class="checkout">
-					<label><h1>Check out</h1></label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_out_date']) && $errors['check_out_date'] == 0){ echo $_GET['check_out_date']; } ?>" name="check_out_date" type = "text" readonly="readonly" id = "datepicker-11"></spam>
+					<label><h1>Check out</h1></label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_out_date']) && $errors['check_out_date'] == 0){ echo $_GET['check_out_date']; } ?>" name="check_out_date" type = "text" readonly="readonly" id = "datepicker-11"></span>
 					<?php echo ($error_message_dt); ?>
 					<?php echo ($error_message_no); ?>
 				</div>
 
 
 				<div class="checkout">
-					<a><h1>Adults</h1><span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_adults']) && $errors['number_adults'] == 0){ echo $_GET['number_adults']; } ?>" name="number_adults" class="wpcf7-date"></span></a>
+					<h1>Adults</h1><span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_adults']) && $errors['number_adults'] == 0){ echo $_GET['number_adults']; } ?>" name="number_adults" class="wpcf7-date"></span>
 					<?php echo ($error_message_peo); ?>
 					<?php echo ($error_message_peo2); ?>
 				</div>
 
 
 				<div class="checkout">
-					<a><h1>Children</h1><span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_children']) && $errors['number_children'] == 0){ echo $_GET['number_children']; } ?>" name="number_children" class="wpcf7-date"></span></a>
+					<h1>Children</h1><span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_children']) && $errors['number_children'] == 0){ echo $_GET['number_children']; } ?>" name="number_children" class="wpcf7-date"></span>
 					<?php echo ($error_message_rooms); ?>
 					<?php echo ($error_message_rooms2); ?>
 				</div>

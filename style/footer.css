@@ -36,4 +36,26 @@ footer{
 	opacity: 0.8;
 }
 @media screen and (max-width: 900px){
+footer{
+	text-align: center;
+}
+#footer {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+#footer_logo img {
+    width: 25vw;
+}
+.footer_links h3 {
+    font-size: 4vw;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}
+.footer_links p {
+    font-size: 4vw;
+    font-weight: 200;
+}
 }
