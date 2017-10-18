@@ -121,15 +121,15 @@
 		</div>
 		
 		<div class="wrap" id="second">
-			<div class="b-5">
+			<a href="rooms.php"><div class="b-5">
 				<div><h5>Standart room <br> single/double</h5></div>
-			</div>
-			<div class="b-6">
+			</div></a>
+			<a href="rooms.php"><div class="b-6">
 				<div><h5>junior suite <br> apartment</h5></div>
-			</div>
-			<div class="b-7">
+			</div></a>
+			<a href="rooms.php"><div class="b-7">
 				<div><h5>de luxe <br> apartment</h5></div>
-			</div>
+			</div></a>
 		</div>
 	
 		<div class="header">
