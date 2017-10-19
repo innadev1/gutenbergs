@@ -87,4 +87,54 @@ header{
    height: 0 !important;
    z-index: 2;
 }
+#main {
+    padding-top: 0;
+}
+.main {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    margin-bottom: 0;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	flex-direction: column;
+}
+.bed1, .bed2, .bed3 {
+    width: 100%;
+    height: 130vw;
+    background-position-x: center;
+}
+.cont {
+    width: 80%;
+    margin: auto;
+    height: 100vw;
+    margin-top: -20vw;
+    background-color: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	text-align: center;
+}
+.cont h1 {
+    font-size: 5vw;
+    text-align: center;
+    line-height: unset;
+    padding: 5vw;
+}
+.cont div {
+    padding: 0 6vw 0 6vw;
+}
+.cont p {
+    font-size: 3vw;
+    line-height: unset;
+    text-align: justify;
+}
+.cont button {
+    font-size: 5vw;
+    padding: 1.5vw 8vw;
+	margin-top: 5vw;
+}
 }

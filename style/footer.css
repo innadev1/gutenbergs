@@ -5,16 +5,16 @@ footer{
 	padding-top: 2vw;
 	padding-bottom: 2vw;
 }
-#footer{
-	display: -webkit-box;
+#footer {
+    display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     justify-content: space-around;
-    width: 55%;
-	margin-left: 22.5%;
-	margin-right: 22.5%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 #footer_logo img{
 	width: 4vw;
@@ -34,6 +34,21 @@ footer{
     font-size: 0.8vw;
 	margin:0;
 	opacity: 0.8;
+}
+.wraping{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.c img{
+	width: 1vw;
+    padding-right: 0.3vw;
+}
+.d img {
+    width: 4.5vw;
+    padding-right: 1vw;
 }
 @media screen and (max-width: 900px){
 footer{
@@ -57,5 +72,16 @@ footer{
 .footer_links p {
     font-size: 4vw;
     font-weight: 200;
+}
+.wraping{
+	justify-content: center;
+}
+.c img{
+	width: 5vw;
+    padding: 2vw;
+}
+.d img {
+    width: 15vw;
+    padding: 2vw;
 }
 }

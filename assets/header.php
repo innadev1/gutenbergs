@@ -1,4 +1,11 @@
 <?php
+	if(!empty($_GET)){
+
+		header("Location:https://app.thebookingbutton.com/properties/hgutenbergsdirect?locale=en&check_in_date=".$_GET['check_in_date']."&check_out_date=".$_GET['check_out_date']."&number_adults=".$_GET['number_adults']."&number_children=".$_GET['number_children']);
+				
+	}
+?>
+<?php
 
 $error_message_df = "";
 $error_message_dt = "";
@@ -88,9 +95,30 @@ if(isset($_GET['submit_two'])) {
 
 	<div id="logo"><a href="index.php"><img src="img/logo.png"></a></div>
 
+	<div id="menu"><div id="toggler"><img src="img/mn.png"></div></div>
+
+	
+	<script>
+		window.onload= function() {
+		document.getElementById('toggler').onclick = function() {
+			openbox('navigation', this);
+			return false;
+		};
+	};
+		function openbox(id, toggler) {
+			var div = document.getElementById(id);
+			if(div.style.display == 'block') {
+				div.style.display = 'none';
+			}
+			else {
+				div.style.display = 'block';
+			}
+	}
+	</script>
+	
 	<div id="navigation">
 		<ul class="navigation">
-			<li><a href="index.php">about us</a></li>
+			<li><a href="about_us.php">about us</a></li>
 			<li><a href="rooms.php">rooms</a></li>
 			<li><a href="http://restaurant-gutenbergs.lv/">restaurant</a></li>
 			<li><a href="conference_hall.php">conference hall</a></li>
@@ -194,13 +222,7 @@ if(isset($_GET['submit_two'])) {
 				<div class="checkout" id="button" style="padding:0;">
 
 				
-				<?php
-					if(!empty($_GET)){
-
-						header("Location:https://app.thebookingbutton.com/properties/hgutenbergsdirect?locale=en&check_in_date=".$_GET['check_in_date']."&check_out_date=".$_GET['check_out_date']."&number_adults=".$_GET['number_adults']."&number_children=".$_GET['number_children']);
 				
-					}
-				?>
 					<input class="blackbutton" type="submit" id="submit" name="submit_two" value="book">
 				</div>
 			</div>

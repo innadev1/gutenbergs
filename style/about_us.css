@@ -1,0 +1,131 @@
+header{
+    background-image: url(../img/background_4.jpg) !important;
+}
+.round_buttons, #form {
+    display: none;
+}
+
+#main{
+	padding-top: 1.5vw;
+}
+.bed1, .bed3, .bed2, .bed4, .bed5, .bed6, .bed7, .bed8{
+    background-size: cover;
+    background-repeat: no-repeat;
+	width: 65%;
+	height: 100%;
+}
+.bed1{
+	background-image: url(../img/about_us/1.jpg);
+}
+.bed2{
+	background-image: url(../img/about_us/2.jpg);
+}
+.bed3{
+	background-image: url(../img/about_us/3.jpg);
+}
+.bed4{
+	background-image: url(../img/about_us/4.jpg);
+}
+.bed5{
+	background-image: url(../img/about_us/5.jpg);
+}
+.bed6{
+	background-image: url(../img/about_us/6.jpg);
+}
+.bed7{
+	background-image: url(../img/about_us/7.jpg);
+}
+.bed8{
+	background-image: url(../img/about_us/8.jpg);
+}
+.main{
+	width: 65vw;
+	height: 25vw;
+	position: relative;
+	margin: auto;
+	margin-bottom: 1.5vw;
+	box-shadow: 0 0 30px rgba(0,0,0,0.2);
+	
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.main2{
+	width: 65vw;
+	height: 25vw;
+	position: relative;
+	margin: auto;
+	margin-bottom: 1.5vw;
+	box-shadow: 0 0 30px rgba(0,0,0,0.2);
+	
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	flex-direction: row-reverse;
+}
+.cont{
+	width: 45%;
+}
+#main img{
+	width: 2vw;
+	margin-bottom: 1vw;
+}
+#main h1{
+    text-align: center;
+    font-size: 1.2vw;
+    font-family: "Roboto", sans-serif;
+    color: rgb(72, 76, 62);
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.1vw;
+    margin: 0;
+    color: rgb(88, 88, 88);
+    margin-bottom: 1.5vw;
+}
+.main p, .main2 p{
+	font-size: 0.8vw;
+    line-height: 1.5vw;
+    font-family: "Roboto", sans-serif;
+    color: rgb(88, 88, 88);
+}
+.main p{
+	text-align: left;
+}
+.main2 p{
+	text-align: right;
+}
+.cont div{
+	padding: 3.5vw 2vw 3vw 2vw;
+}
+.capt {
+    text-align: center;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+}
+.capt img {
+    width: 2vw;
+}
+.capt h2 {
+    text-align: center;
+    font-size: 1.2vw;
+    font-family: "Roboto", sans-serif;
+    color: rgb(72, 76, 62);
+    text-transform: uppercase;
+    margin: 1vw;
+    margin-top: 0.5vw;
+    font-weight: 300;
+    letter-spacing: 0.1vw;
+}
+span{
+	font-size: 0.5vw;
+}
+@media screen and (max-width: 900px){
+header{
+    background-image: url(../img/background_4_mobile.jpg) !important;
+}
+
+}

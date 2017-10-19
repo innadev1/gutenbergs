@@ -20,6 +20,18 @@
 		</div>
 		<div class="footer_links">
 			<h3>Latest</h3>
+			<div class="c wraping">
+				<div><img src="img/tw.png"></div>
+				<div><img src="img/f.png"></div>
+				<div><img src="img/y.png"></div>
+			</div>
+		</div>
+		<div class="footer_links">
+			<h3></h3>
+			<div class="d wraping">
+				<div><img src="img/logo1.png"></div>
+				<div><img src="img/logo2.png"></div>
+			</div>
 		</div>
 	</div>
 </footer>
