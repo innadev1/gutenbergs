@@ -210,9 +210,10 @@ header {
     padding-right: 0;
     padding-top: 10vw;
     padding-bottom: 10vw;
+	background-color: rgba(0,0,0,0.5);
 }
 #menu{
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.5);
 	height: 20vw;
 }
 #navigation li {

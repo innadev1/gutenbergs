@@ -83,7 +83,6 @@ header{
     font-weight: 300;
     letter-spacing: 0.1vw;
     margin: 0;
-    color: rgb(88, 88, 88);
     margin-bottom: 1.5vw;
 }
 .main p, .main2 p{
@@ -123,9 +122,93 @@ header{
 span{
 	font-size: 0.5vw;
 }
+.this_buttons{display:none;}
 @media screen and (max-width: 900px){
 header{
     background-image: url(../img/background_4_mobile.jpg) !important;
+}
+#main {
+    padding-top: 0;
+}
+.main, .main2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    flex-direction: column;
+	box-shadow: none;
+}
+.bed1, .bed3, .bed2, .bed4, .bed5, .bed6, .bed7, .bed8 {
+    width: 100%;
+    height: 120vw;
+	background-position-x: 20%;
+}
+.bed1, #cont_bed4{display:none;}
+.cont {
+    width: 100%;
+}
+#main img {
+    width: 7vw;
+    margin-bottom: 3vw;
+}
+#main h1 {
+    font-size: 4vw;
+    font-weight: 300;
+    letter-spacing: 0.2vw;
+    margin-bottom: 5vw;
+}
+.cont div {
+    padding: 10vw;
+}
+.main p, .main2 p {
+    font-size: 3vw;
+    line-height: 4vw;
+    font-family: "Roboto", sans-serif;
+    color: rgb(88, 88, 88);
+	text-align: justify;
+}
+.capt h2{
+	font-size: 4vw;
+    font-weight: 300;
+    letter-spacing: 0.2vw;
+}
+.capt {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+.otrais {
+    margin-top: -10vw;
+    background-color: white;
+    z-index: 2;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+	box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
+.otrais p{
+	text-align: center;
+}
+#apakseji{position:relative}
+#block2, #block3, #block4{display: none;}
+.this_buttons{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: absolute;
+    top: 112vw;
+    z-index: 10;
+}
+
+.this_buttons img{
+	width: 4vw !important;
+    margin-bottom: 3vw !important;
+    padding: 3vw;
 }
 
 }
