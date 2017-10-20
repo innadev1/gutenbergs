@@ -90,6 +90,10 @@
 	
 		<?php include 'assets/header.php'; ?>
 	
+		<video width="100%" autoplay>
+		   <source src="video/video.mp4" type='video/mp4'>
+		</video>
+
 		<div class="header">
 			<img src="img/1.png">
 			<h2>Introduce our hotel</h2>
