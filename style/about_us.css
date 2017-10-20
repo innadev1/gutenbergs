@@ -124,6 +124,9 @@ span{
 }
 .this_buttons{display:none;}
 @media screen and (max-width: 900px){
+span {
+    font-size: 3vw;
+}
 header{
     background-image: url(../img/background_4_mobile.jpg) !important;
 }
