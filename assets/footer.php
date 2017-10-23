@@ -29,8 +29,15 @@
 		<div class="footer_links">
 			<h3></h3>
 			<div class="d wraping">
-				<div><img src="img/logo1.png"></div>
-				<div><img src="img/logo2.png"></div>
+
+				<a href="http://www.marciena.eu/index.php/lv/">
+					<img src="img/logo1.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+				</a>
+
+				<a href="http://www.gutenbergs-apartment.lv/">
+					<img src="img/logo2.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+				</a>
+
 			</div>
 		</div>
 	</div>
