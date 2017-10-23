@@ -82,6 +82,9 @@ video{
 	text-align: center;
 	position: relative;
 }
+.b-1:hover, .b-2:hover, .b-3:hover, .b-4:hover, .b-8:hover{
+	background-color: rgba(0,0,0,0.6);
+}
 .b-1 div, .b-2 div, .b-3 div, .b-4 div, .b-8 div{
 	position: relative;
     height: 45%;
