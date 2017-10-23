@@ -70,7 +70,7 @@
 	
 //FORM
 	$language['ru']['check_in'] = 'Дата заезда';
-    $language['lv']['check_in'] = 'Ierašanas';
+    $language['lv']['check_in'] = 'Iebraukšana';
 	$language['en']['check_in'] = 'Check in';
 	
 	$language['ru']['check_out'] = 'Дата выезда';
