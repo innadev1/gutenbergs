@@ -114,7 +114,7 @@
 	$language['en']['hotel'] = 'Introduce our hotel';
 	
 	$language['ru']['our_rooms'] = 'Наши комнаты';
-    $language['lv']['our_rooms'] = 'Musu istabas';
+    $language['lv']['our_rooms'] = 'Mūsu istabas';
 	$language['en']['our_rooms'] = 'Our rooms';
 	
 	$language['ru']['question'] = 'Есть вопросы?';

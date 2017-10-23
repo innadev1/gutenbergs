@@ -37,6 +37,7 @@ header{
 .triggers img{
 	width: 2vw;
     padding: 1vw;
+	cursor: pointer;
 }
 
 .bed2{
