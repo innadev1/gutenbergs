@@ -1,10 +1,15 @@
 <?php
-	if(!empty($_GET)){
+	include 'assets/lang.php';
+?>
+
+<?php
+	if(isset($_GET["submit_two"])){
 
 		header("Location:https://app.thebookingbutton.com/properties/hgutenbergsdirect?locale=en&check_in_date=".$_GET['check_in_date']."&check_out_date=".$_GET['check_out_date']."&number_adults=".$_GET['number_adults']."&number_children=".$_GET['number_children']);
 				
 	}
 ?>
+
 <?php
 
 $error_message_df = "";
@@ -84,7 +89,6 @@ if(isset($_GET['submit_two'])) {
 }
 
 ?>
-
 <link rel="stylesheet" type="text/css" href="style/header.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
@@ -118,15 +122,16 @@ if(isset($_GET['submit_two'])) {
 	
 	<div id="navigation">
 		<ul class="navigation">
-			<li><a href="about_us.php">about us</a></li>
-			<li><a href="rooms.php">rooms</a></li>
-			<li><a href="http://restaurant-gutenbergs.lv/">restaurant</a></li>
-			<li><a href="conference_hall.php">conference hall</a></li>
-			<li><a href="index.php#contact_us">contacts</a></li>
-			<li><a href="https://app.thebookingbutton.com/properties/hgutenbergsdirect">reservation</a></li>
-			<li><a>en</a></li>
-			<li><a>lv</a></li>
-			<li><a>ru</a></li>
+			<li><a href="index.php"><?php echo $language[$lang]['home'] ?></a></li>
+			<li><a href="about_us.php"><?php echo $language[$lang]['about_us'] ?></a></li>
+			<li><a href="rooms.php"><?php echo $language[$lang]['rooms'] ?></a></li>
+			<li><a href="http://restaurant-gutenbergs.lv/"><?php echo $language[$lang]['restaurant'] ?></a></li>
+			<li><a href="conference_hall.php"><?php echo $language[$lang]['conference'] ?></a></li>
+			<li><a href="index.php#contact_us"><?php echo $language[$lang]['contacts'] ?></a></li>
+			<li><a href="https://app.thebookingbutton.com/properties/hgutenbergsdirect"><?php echo $language[$lang]['reservation'] ?></a></li>
+			<li><a href="?lang=en"><?php echo $language[$lang]['EN'] ?></a></li>
+			<li><a href="?lang=lv"><?php echo $language[$lang]['LV'] ?></a></li>
+			<li><a href="?lang=ru"><?php echo $language[$lang]['RU'] ?></a></li>
 		</ul>
 	</div>
 
@@ -193,27 +198,27 @@ if(isset($_GET['submit_two'])) {
 			<div id="checkout">
 			
 				<div class="checkout">
-					<label><h1>Check in</h1></label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_in_date']) && $errors['check_in_date'] == 0 ){ echo $_GET['check_in_date']; } ?>" name="check_in_date" type = "text" readonly="readonly" id = "datepicker-10"></span>
+					<label><h1><?php echo $language[$lang]['check_in'] ?></h1></label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_in_date']) && $errors['check_in_date'] == 0 ){ echo $_GET['check_in_date']; } ?>" name="check_in_date" type = "text" readonly="readonly" id = "datepicker-10"></span>
 					<?php echo ($error_message_df); ?>
 					<?php echo ($error_message_no); ?>
 				</div>
 
 				<div class="checkout">
-					<label><h1>Check out</h1></label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_out_date']) && $errors['check_out_date'] == 0){ echo $_GET['check_out_date']; } ?>" name="check_out_date" type = "text" readonly="readonly" id = "datepicker-11"></span>
+					<label><h1><?php echo $language[$lang]['check_out'] ?></h1></label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_GET['check_out_date']) && $errors['check_out_date'] == 0){ echo $_GET['check_out_date']; } ?>" name="check_out_date" type = "text" readonly="readonly" id = "datepicker-11"></span>
 					<?php echo ($error_message_dt); ?>
 					<?php echo ($error_message_no); ?>
 				</div>
 
 
 				<div class="checkout">
-					<h1>Adults</h1><span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_adults']) && $errors['number_adults'] == 0){ echo $_GET['number_adults']; } ?>" name="number_adults" class="wpcf7-date"></span>
+					<h1><?php echo $language[$lang]['adults'] ?></h1><span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_adults']) && $errors['number_adults'] == 0){ echo $_GET['number_adults']; } ?>" name="number_adults" class="wpcf7-date"></span>
 					<?php echo ($error_message_peo); ?>
 					<?php echo ($error_message_peo2); ?>
 				</div>
 
 
 				<div class="checkout">
-					<h1>Children</h1><span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_children']) && $errors['number_children'] == 0){ echo $_GET['number_children']; } ?>" name="number_children" class="wpcf7-date"></span>
+					<h1><?php echo $language[$lang]['children'] ?></h1><span class="inputs"><input type="text" value = "<?php if(isset($_GET['number_children']) && $errors['number_children'] == 0){ echo $_GET['number_children']; } ?>" name="number_children" class="wpcf7-date"></span>
 					<?php echo ($error_message_rooms); ?>
 					<?php echo ($error_message_rooms2); ?>
 				</div>
@@ -223,7 +228,7 @@ if(isset($_GET['submit_two'])) {
 
 				
 				
-					<input class="blackbutton" type="submit" id="submit" name="submit_two" value="book">
+					<input class="blackbutton" type="submit" id="submit" name="submit_two" value="<?php echo $language[$lang]['book'] ?>">
 				</div>
 			</div>
 		</form>

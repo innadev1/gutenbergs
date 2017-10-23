@@ -29,6 +29,13 @@ footer{
 	text-transform : uppercase;
 	margin-bottom: 1vw;
 }
+.footer_links a{
+	cursor: pointer;
+}
+.footer_links a:hover{
+	text-decoration: underline;
+	color: orange;
+}
 .footer_links p{
 	color: rgb(176, 145, 93);
     font-size: 0.8vw;

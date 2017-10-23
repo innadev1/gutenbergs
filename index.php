@@ -90,38 +90,42 @@
 	
 		<?php include 'assets/header.php'; ?>
 	
-		<video width="100%" autoplay>
+		<video width="100%" autoplay loop>
 		   <source src="video/video.mp4" type='video/mp4'>
 		</video>
 
 		<div class="header">
 			<img src="img/1.png">
-			<h2>Introduce our hotel</h2>
-			<p>Boutique stila viesnīca Vecpilsētas centrā. Slavena ar greznu interjeru, romantisku, vēsturisku stilu un sirsnīgu personālu.</p>
+			<h2><?php echo $language[$lang]['hotel'] ?></h2>
+			<p><?php echo $language[$lang]['header_text'] ?></p>
 		</div>
 	
 		<div class="wrap" id="first">
 			<div class="b-1">
-				<div><img src="img/l1.png"></div>
-				<h3>perfect view</h3>
+				<a href="#about_us.php"><div><img src="img/l4.png"></div>
+				<h3><?php echo $language[$lang]['about_us'] ?></h3></a>
 			</div>
 			<div class="b-2">
-				<div><img src="img/l2.png"></div>
-				<h3>luxurios rooms</h3>
+				<a href="rooms.php"><div><img src="img/l2.png"></div>
+				<h3><?php echo $language[$lang]['rooms'] ?></h3></a>
 			</div>
 			<div class="b-3">
-				<div><img src="img/l3.png"></div>
-				<h3>delicious food</h3>
+				<a href="http://restaurant-gutenbergs.lv/"><div><img src="img/l3.png"></div>
+				<h3><?php echo $language[$lang]['restaurant'] ?></h3></a>
 			</div>
 			<div class="b-4">
-				<div><img src="img/l4.png"></div>
-				<h3>about us</h3>
+				<a href="conference_hall.php"><div><img src="img/l1.png"></div>
+				<h3><?php echo $language[$lang]['conference'] ?></h3></a>
+			</div>
+			<div class="b-8">
+				<a href=""><div><img src="img/l1.png"></div>
+				<h3><?php echo $language[$lang]['gallery'] ?></h3></a>
 			</div>
 		</div>
 
 		<div class="header">
 			<img src="img/1.png">
-			<h2>Our rooms</h2>
+			<h2><?php echo $language[$lang]['our_rooms'] ?></h2>
 		</div>
 		
 		<div class="wrap" id="second">
@@ -138,7 +142,7 @@
 	
 		<div class="header">
 			<img src="img/1.png">
-			<h2>Have any question?</h2>
+			<h2><?php echo $language[$lang]['question'] ?></h2>
 		</div>
 
 		<?php if(!$mailSuccess){ ?>
@@ -166,11 +170,11 @@
 		
 		<div class="header">
 			<img src="img/1.png">
-			<h2>Contact us</h2>
+			<h2><?php echo $language[$lang]['contact_us'] ?></h2>
 		</div>
 		
 		<div id="contact_us">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.9402892663093!2d24.10318801627591!3d56.94982428089038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd767b3639b%3A0x80f2553d2375d26b!2zRG9tYSBsYXVrdW1zIDEsIENlbnRyYSByYWpvbnMsIFLEq2dhLCBMVi0xMDUwLCDQm9Cw0YLQstC40Y8!5e0!3m2!1sru!2sru!4v1507631151586" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.9812809355444!2d24.10117131627591!3d56.94912198089018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd75e0742ab%3A0xa1c034205955fe93!2sHotel+Gutenbergs!5e0!3m2!1sru!2sru!4v1508762046686" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 	
 		<?php include 'assets/footer.php'; ?>
