@@ -5,6 +5,94 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
         <title>rooms</title>
+		
+		<!--FIRST GALLERY-->
+		<script>
+			var productnow = 0
+			$(document).ready(function(){
+				
+				count = $('.bed1 .bed-1-1').length
+				
+				$("#Right1").click(function () {
+					if(productnow>0){
+					productnow-=1
+					}else{productnow=count-1}
+					$('.bed1 .bed-1-1').css('display','none')
+					$('.bed1 .bed-1-1:eq('+productnow+')').fadeIn(200)
+					console.log($('.bed1 .bed-1-1:eq('+productnow+')'))
+					
+				});
+				
+				$("#Left1").click(function () {
+				
+				if(productnow<count-1){
+					productnow+=1
+					}else{productnow=0}
+					$('.bed1 .bed-1-1').css('display','none')
+					$('.bed1 .bed-1-1:eq('+productnow+')').fadeIn(200)
+					console.log($('.bed1 .bed-1-1:eq('+productnow+')'))
+				
+				});
+			});
+		</script>
+		<!--SECOND GALLERY-->
+		<script>
+			var productnow = 0
+			$(document).ready(function(){
+				
+				count = $('.bed2 .bed-2-2').length
+				
+				$("#Right2").click(function () {
+					if(productnow>0){
+					productnow-=1
+					}else{productnow=count-1}
+					$('.bed2 .bed-2-2').css('display','none')
+					$('.bed2 .bed-2-2:eq('+productnow+')').fadeIn(200)
+					console.log($('.bed2 .bed-2-2:eq('+productnow+')'))
+					
+				});
+				
+				$("#Left2").click(function () {
+				
+				if(productnow<count-1){
+					productnow+=1
+					}else{productnow=0}
+					$('.bed2 .bed-2-2').css('display','none')
+					$('.bed2 .bed-2-2:eq('+productnow+')').fadeIn(200)
+					console.log($('.bed2 .bed-2-2:eq('+productnow+')'))
+				
+				});
+			});
+		</script>
+		<!--THIRD GALLERY-->
+		<script>
+			var productnow = 0
+			$(document).ready(function(){
+				
+				count = $('.bed3 .bed-3-3').length
+				
+				$("#Right3").click(function () {
+					if(productnow>0){
+					productnow-=1
+					}else{productnow=count-1}
+					$('.bed3 .bed-3-3').css('display','none')
+					$('.bed3 .bed-3-3:eq('+productnow+')').fadeIn(200)
+					console.log($('.bed3 .bed-3-3:eq('+productnow+')'))
+					
+				});
+				
+				$("#Left3").click(function () {
+				
+				if(productnow<count-1){
+					productnow+=1
+					}else{productnow=0}
+					$('.bed3 .bed-3-3').css('display','none')
+					$('.bed3 .bed-3-3:eq('+productnow+')').fadeIn(200)
+					console.log($('.bed3 .bed-3-3:eq('+productnow+')'))
+				
+				});
+			});
+		</script>
     </head>
 
 	<body>
@@ -13,7 +101,15 @@
 	
 		<div id="main">
 			<div class="main">
-				<div class="bed1"></div>
+				<div class="bed1">
+					<div class="bed-1-1" id="bed1-1"></div>
+					<div class="bed-1-1" id="bed1-2"></div>
+					
+					<div class="triggers">
+						<div id="Right1"><img src="img/previous.png"></div>
+						<div id="Left1"><img src="img/next.png"></div>
+					</div>
+				</div>
 				<div class="cont">
 					<div>
 						<h1>Standard room <br> single/double</h1>
@@ -23,7 +119,15 @@
 				</div>
 			</div>
 			<div class="main">
-				<div class="bed2"></div>
+				<div class="bed2">
+					<div class="bed-2-2" id="bed2-1"></div>
+					<div class="bed-2-2" id="bed2-2"></div>
+					
+					<div class="triggers">
+						<div id="Right2"><img src="img/previous.png"></div>
+						<div id="Left2"><img src="img/next.png"></div>
+					</div>
+				</div>
 				<div class="cont">
 					<div>
 						<h1>Junior Suite <br> apartments</h1>
@@ -32,7 +136,15 @@
 					</div>
 			</div>
 			<div class="main">
-				<div class="bed3"></div>
+				<div class="bed3">
+					<div class="bed-3-3" id="bed3-1"></div>
+					<div class="bed-3-3" id="bed3-2"></div>
+					
+					<div class="triggers">
+						<div id="Right3"><img src="img/previous.png"></div>
+						<div id="Left3"><img src="img/next.png"></div>
+					</div>
+				</div>
 				<div class="cont">
 					<div>
 						<h1>De Luxe apartment</h1>
