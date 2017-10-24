@@ -112,10 +112,10 @@
 				</div>
 				<div class="cont">
 					<div>
-						<h1>Standard room <br> single/double</h1>
-						<p>With a king size (220 x 180) bed, 2 bedside tables, a stand-lamp, a breakfast-table, 2 soft armchairs, a writing cabinet with a lamp, TV with international channels, a phone, Free WIFI Internet, a mini-bar. Twin room with two separate beds is available. In the bathroom – a shower or a bath at your option, a hair dryer, one power outlet, articles of personal hygiene - soap, shower gels, shower caps, 3 towels, but during summer also flowers. Room service, laundry service, ironing, car services, etc.</p>
+						<h1><?php echo $language[$lang]['stand_room'] ?></h1>
+						<p><?php echo $language[$lang]['stand_room_text'] ?></p>
 						<a href="https://app.thebookingbutton.com/properties/hgutenbergsdirect">
-    						<button>Book</button>
+    						<button><?php echo $language[$lang]['book'] ?></button>
 						</a>
 					</div>
 				</div>
@@ -132,11 +132,11 @@
 				</div>
 				<div class="cont">
 					<div>
-						<h1>Junior Suite <br> apartments</h1>
-						<p>Single or double apartments with a comfortable, furnished anteroom that would fit for a small meeting of 4-6 people or a child's bedroom. With one or two king size beds, 2 bedside tables, a ceiling lamp, a breakfast-table, 2 soft armchairs, a writing cabinet with a lamp, TV with international channels, a phone, Free WiFi, a mini-bar, in the bathroom – heated tile floor. More conveniences – the same as before.</p>
+						<h1><?php echo $language[$lang]['jun_room'] ?></h1>
+						<p><?php echo $language[$lang]['jun_room_text'] ?></p>
 						
 						<a href="https://app.thebookingbutton.com/properties/hgutenbergsdirect">
-    						<button>Book</button>
+    						<button><?php echo $language[$lang]['book'] ?></button>
 						</a>
 
 					</div>
@@ -154,10 +154,10 @@
 				</div>
 				<div class="cont">
 					<div>
-						<h1>De Luxe apartment</h1>
-						<p>Single or double De Luxe apartment with a comfortable anteroom with a guest restroom. Further on from the anteroom – living room of 25 m2 with 4 windows, one opens to the very floor and a rocking-chair by the large TV-set. The living room has a comfortable writing cabinet, a chest of drawers, a mini-bar. Behind the bedroom – the second spacious restroom with a bath and heated floor. The living room can host a small party of 6-10 people or serve as a children's bedroom. In the bedroom – a TV, the large king size bed. More conveniences – the same as before.</p>
+						<h1><?php echo $language[$lang]['apm_lux'] ?></h1>
+						<p><?php echo $language[$lang]['apm_lux_text'] ?></p>
 						<a href="https://app.thebookingbutton.com/properties/hgutenbergsdirect">
-    						<button>Book</button>
+    						<button><?php echo $language[$lang]['book'] ?></button>
 						</a>
 					</div>
 				</div>

@@ -125,13 +125,13 @@ if(isset($_GET['submit_two'])) {
 			<li><a href="index.php"><?php echo $language[$lang]['home'] ?></a></li>
 			<li><a href="about_us.php"><?php echo $language[$lang]['about_us'] ?></a></li>
 			<li><a href="rooms.php"><?php echo $language[$lang]['rooms'] ?></a></li>
-			<li><a href="http://restaurant-gutenbergs.lv/"><?php echo $language[$lang]['restaurant'] ?></a></li>
+			<li><a href="http://restaurant-gutenbergs.lv/index.php/<?php echo $lang ?>/"><?php echo $language[$lang]['restaurant'] ?></a></li>
 			<li><a href="conference_hall.php"><?php echo $language[$lang]['conference'] ?></a></li>
 			<li><a href="index.php#contact_us"><?php echo $language[$lang]['contacts'] ?></a></li>
 			<li><a href="https://app.thebookingbutton.com/properties/hgutenbergsdirect"><?php echo $language[$lang]['reservation'] ?></a></li>
 			<li><a href="?lang=en"><?php echo $language[$lang]['EN'] ?></a></li>
 			<li><a href="?lang=lv"><?php echo $language[$lang]['LV'] ?></a></li>
-			<li><a href="?lang=ru"><?php echo $language[$lang]['RU'] ?></a></li>
+			<li><a href="?lang=rus"><?php echo $language[$lang]['RUS'] ?></a></li>
 		</ul>
 	</div>
 

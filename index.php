@@ -1,5 +1,5 @@
 <?php
-
+	include 'assets/lang.php';
 
 	$error_message_n = "";
 	$error_message_n2 = "";
@@ -28,12 +28,12 @@
 
 		// Name
 		if(strlen($name) < 2) {
-        	$error_message_n .= '<p style = "color: red; padding: 0 1vw 0 1vw;">Name too short.</p>';
+        	$error_message_n .= '<p style = "color: red; padding: 0 1vw 0 1vw;">'.$language[$lang]['name_t_sh'].'</p>';
 			$errors['name'] = 1;
 		}
 		
 		if(preg_match($email_exp_a,$_POST["name"])) {
-			$error_message_n2 .= '<p style = "color: red; padding: 0 1vw 0 1vw;">only alphabet!</p>';
+			$error_message_n2 .= '<p style = "color: red; padding: 0 1vw 0 1vw;">'.$language[$lang]['only_alph'].'</p>';
 			$errors['name'] = 1;
 		}
 
@@ -43,13 +43,13 @@
     	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 	
     	if(!preg_match($email_exp,$email)) {
-        	$error_message_em .= '<p style = "color: red; padding: 0 1vw 0 1vw;">Please enter email!</p>';
+        	$error_message_em .= '<p style = "color: red; padding: 0 1vw 0 1vw;">'.$language[$lang]['enter_email'].'</p>';
 			$errors['email'] = 1;
 		}
 
 
 		if(empty($text)){
-			$error_message_text .= '<p style = "color: red; padding: 0 1vw 0 1vw;">Please enter your question!</p>';
+			$error_message_text .= '<p style = "color: red; padding: 0 1vw 0 1vw;">'.$language[$lang]['you_ques'].'</p>';
 			$errors['text'] = 1;
 		}
 
@@ -58,7 +58,7 @@
 			$subject = 'the subject';
 			$headers = '';
 
-			$message = "Name:" . " " . $name . "\r\n" . "Email:" . " " . $email. "\r\n" . "Question:" . " " . $text;
+			$message = $language[$lang]['name'] . " " . $name . "\r\n" . $language[$lang]['email'] . " " . $email. "\r\n" . $language[$lang]['question'] . " " . $text;
 
 			if(mail($to, $subject, $message, $headers)){
 				
@@ -110,7 +110,7 @@
 				<h3><?php echo $language[$lang]['rooms'] ?></h3></a>
 			</div>
 			<div class="b-3">
-				<a href="http://restaurant-gutenbergs.lv/"><div><img src="img/l3.png"></div>
+				<a href="http://restaurant-gutenbergs.lv/?lang="><div><img src="img/l3.png"></div>
 				<h3><?php echo $language[$lang]['restaurant'] ?></h3></a>
 			</div>
 			<div class="b-4">
@@ -130,13 +130,13 @@
 		
 		<div class="wrap" id="second">
 			<a href="rooms.php"><div class="b-5">
-				<div><h5>Standart room <br> single/double</h5></div>
+				<div><h5><?php echo $language[$lang]['stand_room'] ?></h5></div>
 			</div></a>
 			<a href="rooms.php"><div class="b-6">
-				<div><h5>junior suite <br> apartment</h5></div>
+				<div><h5><?php echo $language[$lang]['jun_room'] ?></h5></div>
 			</div></a>
 			<a href="rooms.php"><div class="b-7">
-				<div><h5>de luxe <br> apartment</h5></div>
+				<div><h5><?php echo $language[$lang]['apm_lux'] ?></h5></div>
 			</div></a>
 		</div>
 	
@@ -148,14 +148,14 @@
 		<?php if(!$mailSuccess){ ?>
 			<form id="form" name="orderform" method="post" action="index.php">
 				<div class="wrap" id="third">
-					<div><input type="text" value = "<?php if(isset($_POST['name']) && $errors['name'] == 0){ echo $_POST['name']; } ?>" name="name" placeholder="name"></input></div>
+					<div><input type="text" value = "<?php if(isset($_POST['name']) && $errors['name'] == 0){ echo $_POST['name']; } ?>" name="name" placeholder="<?php echo $language[$lang]['name'] ?>"></input></div>
 					<?php echo ($error_message_n); ?>
 					<?php echo ($error_message_n2); ?>
-					<div><input type="text" value = "<?php if(isset($_POST['email']) && $errors['email'] == 0){ echo $_POST['email']; } ?>" name="email" placeholder="email"></input></div>
+					<div><input type="text" value = "<?php if(isset($_POST['email']) && $errors['email'] == 0){ echo $_POST['email']; } ?>" name="email" placeholder="<?php echo $language[$lang]['email'] ?>"></input></div>
 					<?php echo ($error_message_em); ?>
-					<div><input type="text" value = "<?php if(isset($_POST['text']) && $errors['text'] == 0){ echo $_POST['text']; } ?>" name="text" placeholder="question"></input></div>
+					<div><input type="text" value = "<?php if(isset($_POST['text']) && $errors['text'] == 0){ echo $_POST['text']; } ?>" name="text" placeholder="<?php echo $language[$lang]['question'] ?>"></input></div>
 					<?php echo ($error_message_text); ?>
-					<div id="button-input"><input class="blackbutton" type="submit" id="submit" name="submit" value="send"></div>
+					<div id="button-input"><input class="blackbutton" type="submit" id="submit" name="submit" value="<?php echo $language[$lang]['send'] ?>"></div>
 				</div>
 
 
@@ -164,7 +164,7 @@
 			}else{
 				
 				?>
-					<div class = "checkmail"><h2>Check your mail!</h2></div>
+					<div class = "checkmail"><h2><?php echo $language[$lang]['checkyo'] ?></h2></div>
 				
 			<?php } ?>
 		

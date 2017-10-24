@@ -14,27 +14,26 @@
 				<div class="bed1"></div>
 				<div class="cont">
 					<div class="cont1">
-						<h1>Johans</h1>
-						<p>Viesnīcas 4.stāvā atrodas semināru/banketu zāle “Johans”, kurā atrodas izcilu latviešu meistaru un citu mākslinieku gleznu kolekcija, kas telpu padara mājīgu un greznu. Konferenču rīkošanai telpas paredzētas līdz 50 personām, jubilejām un kāzām līdz 25 personām, pieņemšanām, prezentācijām, degustācijām līdz 35 personām.</p>
+						<p><?php echo $language[$lang]['konf_text'] ?></p>
 						<div class="wrap">
 							<div class="flex">
-								<h2>Platība:</h2>
-								<p>60 m2</p>
+								<h2><?php echo $language[$lang]['area'] ?></h2>
+								<p><?php echo $language[$lang]['info_area'] ?></p>
 							</div>
 							<div class="flex">
-								<h2>Viesu skaits:</h2>
-								<p>50  |  35  |  25  personām</p>
+								<h2><?php echo $language[$lang]['guests'] ?></h2>
+								<p>50  |  35  |  25  </p>
 							</div>
 							<div class="flex">
-								<h2>Cena:</h2>
-								<p>70 EUR (1h)  |  250 EUR (08:00-17:00)</p>
+								<h2><?php echo $language[$lang]['price'] ?></h2>
+								<p><?php echo $language[$lang]['info_price'] ?></p>
 							</div>
 							<div class="flex">
 								<h2></h2>
 								<p>350 EUR (17:00-23.00)</p>
 							</div>
 							<div class="flex">
-								<h2>Rezervē:</h2>
+								<h2><?php echo $language[$lang]['rezervation'] ?></h2>
 								<p>+371 299444344  |  sandis@gutenbergs.lv</p>
 							</div>
 						</div>
