@@ -136,6 +136,113 @@
 	
 	
 //ABOUT US
+	$language['ru']['about_us'] = 'О нас';
+	$language['lv']['about_us'] = 'Par mums';
+	$language['en']['about_us'] = 'About us';
+
+	$language['ru']['about_us_text1'] = 'Гостиница в стиле Boutique в центре Старого города. Славится своим роскошным интерьером, романтическим, историческим стилем и отзывчивым персоналом.';
+	$language['lv']['about_us_text1'] = 'Boutique stila viesnīca Vecpilsētas centrā. Slavena ar greznu interjeru, romantisku, vēsturisku stilu un sirsnīgu personālu.';
+	$language['en']['about_us_text1'] = 'Boutique-style hotel in the center of the Old Town. Famous for its gorgeous interior, romantic and historical style, and kind personnel.';
+
+	$language['ru']['about_us_text2'] = '38 уютных по-разному обустроенных номеров. Все удобства – ванна или душ, ТВ, WIFI, телефон, минибар, сейф, в ванной комнате теплый пол и другие экстры. Завтрак входит в цену.';
+	$language['lv']['about_us_text2'] = 'Viesnīcā ir 38 mājīgas, dažādi iekārtotas istabas. Visas ērtības - vanna vai duša, Viasat TV, bezmaksas internets, telefons, minibārs, seifs, vannas istabā siltā grīda un citas ekstras. Viesiem brokastis iekļautas cenā.';
+	$language['en']['about_us_text2'] = 'There are 38 cozy rooms of various design. Every convenience – a bath or a shower, TV, WIFI, a phone, a mini-bar, a safe, heated floors in the bathroom and other extras. Breakfast included.';
+
+	$language['ru']['about_us_text3'] = 'Здания гостиницы были построены в XVI и XIX вв. специально для типографии. С тех пор Иоганн Гутенберг – известный патриций из Майнца, который изобрел книгопечатание в 1550 году, – патронирует эти здания, его барельеф украшает фасад здания. В 2001 году во время открытия гостиницы Иоганн Гутенберг вежливо согласился стать покровителем гостиницы.';
+	$language['lv']['about_us_text3'] = 'Viesnīcas ēkas XVI un XIX gs. celtas speciāli tipogrāfijai. Kopš tiem laikiem Johannes Gutenbergs – slavenais Maincas patricietis, poligrāfijas izgudrotājs 1550.gadā - ir šo ēku patrons, viņa bareljefs grezno ēku fasādi. 2001.gadā, atklājot viesnīcu, Johannes Gutenbergs laipni piekrita kļūt arī par viesnīcas patronu.';
+	$language['en']['about_us_text3'] = 'The buildings of the hotel were built in the XVI and XIX centuries for needs of a printing-house. Since then Johannes Gutenberg – the well-known patrician of Mainz, inventor of the polygraph in 1550 – is the patron of these buildings; his bas-relief bedecks the gorgeous facade of the buildings. In 2001, when the hotel was opened, Johannes Gutenbergs kindly agreed to be also the patron of the hotel.';
+
+	$language['ru']['about_us_text4'] = 'Живя в гостинице "Gutenbergs", Вы действительно находитесь в Риге! Здесь все предметы – картины, гравюры, античные предметы роскоши, древние книги в гостиных и коридорах – рассказывают об истории Риги. В холле на 1-м этаже – красивые копии из известной Библии Гуттенберга, а также гравюры и книги, отпечатанные в древней типографии, в холле на 2-м этаже – пейзажи, на которых изображена Латвия и Рига XVII века, а на 3-м этаже – оригиналы картин латышских художников и рассказ в портретах о латышской интеллигенции.';
+	$language['lv']['about_us_text4'] = 'Dzīvojot „Gutenbergā”, jūs pilnīgi noteikti atrodaties Rīgā! Te viss - gleznas, gravīras, antīkas greznumlietas, senas grāmatas viesu istabās un gaiteņos – ir kā stāsts par Rīgas vēsturi. I stāva hallē - skaistas kopijas no slavenās Gutenberga Bībeles un seno laiku spiestuves gravīras, grāmatas, II stāva hallē – ainavas no 17.gs. Latvijas un Rīgas, bet III stāvā – latviešu mākslinieku oriģinālgleznas un stāsts portretos par latviešu inteliģenci.';
+	$language['en']['about_us_text4'] = 'Accommodating at the Gutenbergs you are definitely being in Riga! Everything here – the paintings, engravings, antique fancy articles, old books in the guest rooms and the corridors – is like a story about the history of Riga. In the 1st floors hall – beautiful copies of the famous Gutenberg Bible and the ancient times printing engravings, books; in the 2nd floors hall – landscapes from 17th century Latvia and Riga, and on the 3rd floor – original paintings of Latvian painters and a portrait-story about Latvian intelligentsia.';
+
+
+	$language['ru']['convenience'] = 'О нас';
+	$language['lv']['convenience'] = 'Par mums';
+	$language['en']['convenience'] = 'About us';
+
+	// for us
+	$language['ru']['for_us'] = 'Для Вашего удобства';
+	$language['lv']['for_us'] = 'Jūsu ērtībām';
+	$language['en']['for_us'] = 'For your convenience';
+	// 1--------------------------------------------------> //
+	$language['ru']['for_people'] = 'Для деловых людей';
+	$language['lv']['for_people'] = 'Lietišķiem cilvēkiem';
+	$language['en']['for_people'] = 'For business needs';
+
+	$language['ru']['for_people_text'] = "Проведение конференций (до 80 человек) на 4-м этаже в зале «Johans». <br>
+		Копирование или сканирование документов и изображений на мощном копировальном аппарате и сканере. <br>
+		Заказ визитных карточек или материалов для конференций в течение 24 часов. <br>
+		Хранение драгоценностей и персонального компьютера в сейфе в своем номере. <br>
+		Заказ автомобиля гостиницы для поездки в аэропорт или на вокзал. <br>
+		Аренда автомобиля с или без водителя для ежедневного использования или поездок на дальние расстояния. <br>
+		Услуги курьерской почты и отправка писем и открыток. Об этом позаботятся работники регистратуры.";
+	$language['lv']['for_people_text'] = 'Konferences (līdz 80 cilvēkiem) 4. stāvā zālē "Johans". <br>
+		Pavairot vai ieskanēt dokumentus un attēlus uz jaudīga kopētāja. <br>
+		Pasūtīt vizītkartes vai konferenču materiālus 24h laikā. <br>
+		Bezmaksas WiFi internets visā viesnīcā. <br> 
+		Pasūtīt taksometru ceļam uz lidostu vai staciju. <br>
+		Izmantot kurjerpasta pakalpojumus un vēstuļu un atklātņu nosūtīšanu. Par to parūpēsies reģistratūras darbinieki.';
+	$language['en']['for_people_text'] = "Conferences (for up to 80 persons) in the Johans hall on the 4th floor <br> Document and picture scanning and copying via powerful scanner and copier <br> Order business cards or conference materials in 24 hours <br> Keep valuables and personal PC in a safe in your hotel's room <br> Rent a car with or without a driver for everyday use or longer journeys <br> Carrier services and postage of letters and cards; reception personnel will take care of it.";
+	
+	// 2-----------------------------------------------> //
+	$language['ru']['for_relax'] = 'Для Вашего отдыха';
+	$language['lv']['for_relax'] = 'Jūsu atpūtai';
+	$language['en']['for_relax'] = 'For your entertainment';
+
+	$language['ru']['for_relax_text'] = "Заказ театральных и концертных билетов. <br>
+		Услуги компетентного гида для экскурсии по историческим местам Риги. <br>
+		Отдых на террасе на крыше в солнечный день или под звездным небом, слушая тихую музыку и наблюдая за незабываемыми крышами и башнями Вецриги и противоположным берегом Даугавы с высоты 6-го этажа."; 
+	$language['lv']['for_relax_text'] = "Pasūtīt teātru un koncertu biļetes. <br>
+		Piedāvāt zinoša gida pakalpojumus ekskursijai pa Rīgas vēsturiskajām vietām. <br> 
+		Saulainā dienā vai zem zvaigžņotām debesīm atpūsties viesnīcas jumta terasē un, skanot klusai mūzikai, pavērot neaizmirstamos Vecrīgas jumtus un torņus un Daugavas otru krastu no 6.stāva augstuma.";
+	$language['en']['for_relax_text'] = " Book theater and concert tickets. <br> A competent guide will show you the historical sites in Riga. <br> On a sunny day or under starry skies at night, enjoy the hotel's roof terrace and, listening to a quiet music, look at the unforgettable roofs and towers of the Old Riga and see the other bank of Daugava River from the height of 5th floor.";
+	
+	// 3--------------------------------------------> //
+	$language['ru']['for_health'] = 'Для здоровья';
+	$language['lv']['for_health'] = 'Veselībai';
+	$language['en']['for_health'] = 'For your health';
+
+	$language['ru']['for_health_text'] = "10% скидка в SPA салоне, резиденцие красоты  „Bellezza” . Мы находимся в старом городе на улице 13 января - 21. Дополнительная информация  www.Bellezza.lv  и по тел.  +371 67876555 <br>
+		Салон красоты, парикмахерская и солярий «Agua villa», ул. Тиргоню 11, 2-й этаж, в 5 минутах ходьбы от гостиницы. <br>
+		Если Вы поздно прибываете в Ригу или выезжаете очень рано, в регистратуре гостиницы «Gutenbergs» Вас каждый раз будет ждать чашка горячего чая или кофе, бутерброд или сердечная улыбка, которая поможет решить все проблемы.";
+	$language['lv']['for_health_text'] = '10% atlaide SPA salonā, skaistuma rezidence "Bellezza" ,13. janvāra ielā 21. Vairāk informācijas skat. www.Bellezza.lv vai pa tālruni +371 67876555. <br>
+		Izmantot veselības, skaistuma un labsajūtas gūšanai Dienas SPA Aqua Villa , Tirgoņu ielā 11, Vecrīga (5 minūšu gājienā), piedāvā savus pakalpojumus ar 7% atlaidi viesnīcas „Gutenbergs” klientiem. <br>
+		Informācija www.aquavillaspa.lv. vai pa tālruni + 371 67814686,+371 29196349.';
+	$language['en']['for_health_text'] = '10% discount at the SPA and beauty salon "Bellezza" in Oldriga on 13.janvara street 21. For more information please see www.Bellezza.lv or call +371 67876555+371 67876555 <br> Visit the beauty salon, hair-dresser and solarium Agua Villa in 5 minutes walk from the hotel, on 11 Tirgonu Street, 2nd floor. <br> Should you arrive in Riga very late or depart very early, in the reception of the hotel Gutenbergs you will be greeted with a cup of hot tea or coffee, a sandwich and a warm smile which will help solving any problem.';
+	// 4----------------------------------------------->//
+	$language['ru']['for_disposal'] = 'Для Вашего удобства';
+	$language['lv']['for_disposal'] = 'Jūsu ērtībām';
+	$language['en']['for_disposal'] = 'At your disposal';
+
+	$language['ru']['for_disposal_text'] = 'Звонок-будильник администратора. <br>
+		Дополнительные кровати или детская кроватка, дополнительные одеяла, подушки, а также подушки, не вызывающие аллергию, игрушки и другие необходимые вещи для детей. <br>
+		Табличку «Не беспокоить! / Прошу убрать номер!» Вы найдете на дверной ручке в номер. <br>
+		В регистратуре можно приобрести забытые дома мелочи для ухода за зубами, предметы личной гигиены и т.д. <br>
+		Стирка белья или химчистка верхней одежды. Мешочек для белья и прейскурант найдете в шкафу.';
+	$language['lv']['for_disposal_text'] = 'Pasūtīt modināšanas zvanu. <br>
+		Izmantot papildu gultas vai bērnu gultiņu, papildu segas, spilvenus, pretalerģiskos spilvenus, rotaļlietas un citas bērniem nepieciešamas lietas. <br>
+		Zīmi "Lūdzu netraucēt/uzkopt istabu" Jūs atradīsiet uz istabas roktura. <br>
+		Reģistratūrā iegādāties mājās aizmirstus sīkumus zobu kopšanas piederumus, higiēnas preces, utt.';
+	$language['en']['for_disposal_text'] = "Order wake-up call. <br>
+		Extra beds or a child's bed, extra blankets, pillows, anti-allergic pillows, toys and other items that children need. <br>
+		You will find the Don’t Disturb/Tidy Up sign on you door handle. <br> 
+		Buy tooth-care and hygienic products and other small items forgotten at home at the reception. <br>
+		If you wish you can use laundry service for you clothes and dry-cleaning for your outdoor apparel. You will find the laundry bag and the price list in the closet.";
+
+
+
+///
+	// $language['ru']['about_us_text2'] = '38 уютных по-разному обустроенных номеров. Все удобства – ванна или душ, ТВ, WIFI, телефон, минибар, сейф, в ванной комнате теплый пол и другие экстры. Завтрак входит в цену.';
+	// $language['lv']['about_us_text2'] = 'Viesnīcā ir 38 mājīgas, dažādi iekārtotas istabas. Visas ērtības - vanna vai duša, Viasat TV, bezmaksas internets, telefons, minibārs, seifs, vannas istabā siltā grīda un citas ekstras. Viesiem brokastis iekļautas cenā.';
+	// $language['eng']['about_us_text2'] = 'There are 38 cozy rooms of various design. Every convenience – a bath or a shower, TV, WIFI, a phone, a mini-bar, a safe, heated floors in the bathroom and other extras. Breakfast included.';
+
+
+
+
+
+	
+
 
 //ROOMS
 
