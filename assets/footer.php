@@ -22,7 +22,8 @@
 			<h3><?php echo $language[$lang]['latest'] ?></h3>
 			<div class="c wraping">
 				<!--<div><img src="img/tw.png"></div>-->
-				<div><a><img src="img/f.png"></a></div>
+				<div><a href="https://www.facebook.com/gutenbergsterase"><img src="img/f.png"></a></div>
+				<div><a href="https://www.instagram.com/gutenbergs_riga/"><img src="img/in.png"></a></div>
 				<!--<div><img src="img/y.png"></div>-->
 			</div>
 		</div>
