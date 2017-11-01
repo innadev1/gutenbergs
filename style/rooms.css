@@ -21,7 +21,31 @@ header{
 }
 #bed1-2{
 	display: none;
-	background-image: url(../img/beds/6.jpg);
+	background-image: url(../img/beds/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+#bed1-3{
+	display: none;
+	background-image: url(../img/beds/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+#bed1-4{
+	display: none;
+	background-image: url(../img/beds/8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+#bed1-5{
+	display: none;
+	background-image: url(../img/beds/9.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	width: 100%;
@@ -46,7 +70,7 @@ header{
 	position: relative;
 }
 #bed2-1{
-	background-image: url(../img/beds/2.jpg);
+	background-image: url(../img/beds/7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	width: 100%;
@@ -54,7 +78,7 @@ header{
 }
 #bed2-2{
 	display: none;
-	background-image: url(../img/beds/5.jpg);
+	background-image: url(../img/beds/7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	width: 100%;
@@ -67,7 +91,7 @@ header{
 	position: relative;
 }
 #bed3-1{
-	background-image: url(../img/beds/3.jpg);
+	background-image: url(../img/beds/5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	width: 100%;
@@ -75,7 +99,7 @@ header{
 }
 #bed3-2{
 	display: none;
-	background-image: url(../img/beds/9.jpg);
+	background-image: url(../img/beds/6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	width: 100%;

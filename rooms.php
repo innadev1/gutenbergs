@@ -8,58 +8,56 @@
 		
 		<!--FIRST GALLERY-->
 		<script>
-			var productnow = 0
+			var now = 0
 			$(document).ready(function(){
-				
-				count = $('.bed1 .bed-1-1').length
-				
+
 				$("#Right1").click(function () {
-					if(productnow>0){
-					productnow-=1
-					}else{productnow=count-1}
+				count = $('.bed1 .bed-1-1').length
+					if(now>0){
+					now-=1
+					}else{now=count-1}
 					$('.bed1 .bed-1-1').css('display','none')
-					$('.bed1 .bed-1-1:eq('+productnow+')').fadeIn(200)
-					console.log($('.bed1 .bed-1-1:eq('+productnow+')'))
+					$('.bed1 .bed-1-1:eq('+now+')').fadeIn(200)
+					console.log($('.bed1 .bed-1-1:eq('+now+')'))
 					
 				});
 				
 				$("#Left1").click(function () {
-				
-				if(productnow<count-1){
-					productnow+=1
-					}else{productnow=0}
+				count = $('.bed1 .bed-1-1').length
+					if(now<count-1){
+					now+=1
+					}else{now=0}
 					$('.bed1 .bed-1-1').css('display','none')
-					$('.bed1 .bed-1-1:eq('+productnow+')').fadeIn(200)
-					console.log($('.bed1 .bed-1-1:eq('+productnow+')'))
+					$('.bed1 .bed-1-1:eq('+now+')').fadeIn(200)
+					console.log($('.bed1 .bed-1-1:eq('+now+')'))
 				
 				});
 			});
 		</script>
 		<!--SECOND GALLERY-->
 		<script>
-			var productnow = 0
+			var now1 = 0
 			$(document).ready(function(){
 				
-				count = $('.bed2 .bed-2-2').length
-				
 				$("#Right2").click(function () {
-					if(productnow>0){
-					productnow-=1
-					}else{productnow=count-1}
+				count = $('.bed2 .bed-2-2').length
+				if(now1>0){
+					now1-=1
+					}else{now1=count-1}
 					$('.bed2 .bed-2-2').css('display','none')
-					$('.bed2 .bed-2-2:eq('+productnow+')').fadeIn(200)
-					console.log($('.bed2 .bed-2-2:eq('+productnow+')'))
+					$('.bed2 .bed-2-2:eq('+now1+')').fadeIn(200)
+					console.log($('.bed2 .bed-2-2:eq('+now1+')'))
 					
 				});
 				
 				$("#Left2").click(function () {
-				
-				if(productnow<count-1){
-					productnow+=1
-					}else{productnow=0}
+				count = $('.bed2 .bed-2-2').length	
+				if(now1<count-1){
+					now1+=1
+					}else{now1=0}
 					$('.bed2 .bed-2-2').css('display','none')
-					$('.bed2 .bed-2-2:eq('+productnow+')').fadeIn(200)
-					console.log($('.bed2 .bed-2-2:eq('+productnow+')'))
+					$('.bed2 .bed-2-2:eq('+now1+')').fadeIn(200)
+					console.log($('.bed2 .bed-2-2:eq('+now1+')'))
 				
 				});
 			});
@@ -69,10 +67,9 @@
 			var productnow = 0
 			$(document).ready(function(){
 				
-				count = $('.bed3 .bed-3-3').length
-				
 				$("#Right3").click(function () {
-					if(productnow>0){
+				count = $('.bed3 .bed-3-3').length
+				if(productnow>0){
 					productnow-=1
 					}else{productnow=count-1}
 					$('.bed3 .bed-3-3').css('display','none')
@@ -82,7 +79,7 @@
 				});
 				
 				$("#Left3").click(function () {
-				
+				count = $('.bed3 .bed-3-3').length	
 				if(productnow<count-1){
 					productnow+=1
 					}else{productnow=0}
@@ -104,6 +101,9 @@
 				<div class="bed1">
 					<div class="bed-1-1" id="bed1-1"></div>
 					<div class="bed-1-1" id="bed1-2"></div>
+					<div class="bed-1-1" id="bed1-3"></div>
+					<div class="bed-1-1" id="bed1-4"></div>
+					<div class="bed-1-1" id="bed1-5"></div>
 					
 					<div class="triggers">
 						<div id="Right1"><img src="img/previous.png"></div>

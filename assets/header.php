@@ -95,7 +95,7 @@ if(isset($_GET['submit_two'])) {
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700&amp;subset=cyrillic" rel="stylesheet">
 
-<header>
+<header id="header">
 
 	<div id="logo"><a href="index.php"><img src="img/logo.png"></a></div>
 
@@ -121,6 +121,7 @@ if(isset($_GET['submit_two'])) {
 	</script>
 	
 	<div id="navigation">
+		<div id="phone"><img class="phone" src="img/phone.png"><h1><a href="tel:+371 67814090" style="border:none">+371 67814090</a></h1></div>
 		<ul class="navigation">
 			<li><a href="index.php"><?php echo $language[$lang]['home'] ?></a></li>
 			<li><a href="about_us.php"><?php echo $language[$lang]['about_us'] ?></a></li>
@@ -131,7 +132,7 @@ if(isset($_GET['submit_two'])) {
 			<li><a href="https://app.thebookingbutton.com/properties/hgutenbergsdirect"><?php echo $language[$lang]['reservation'] ?></a></li>
 			<li><a href="?lang=en"><?php echo $language[$lang]['EN'] ?></a></li>
 			<li><a href="?lang=lv"><?php echo $language[$lang]['LV'] ?></a></li>
-			<li><a href="?lang=rus"><?php echo $language[$lang]['RUS'] ?></a></li>
+			<li><a style="border:none; padding-right: 2vw;" href="?lang=rus"><?php echo $language[$lang]['RUS'] ?></a></li>
 		</ul>
 	</div>
 

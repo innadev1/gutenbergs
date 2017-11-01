@@ -69,10 +69,6 @@
 	}
 ?>
 
-
-
-
-
 <html>
     <head>     
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
@@ -83,6 +79,63 @@
         <title>gutenberg</title>
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+		
+			<script>
+			var rrr = 0
+			$(document).ready(function(){
+
+				$("#right_").click(function () {
+				count = $('#first .wrapp').length
+				if(rrr>0){
+					rrr-=1
+					}else{rrr=count-1}
+					$('#first .wrapp').css('display','none')
+					$('#first .wrapp:eq('+rrr+')').fadeIn(200)
+					console.log($('#first .wrapp:eq('+rrr+')'))
+					
+				});
+				
+				$("#left_").click(function () {
+				count = $('#first .wrapp').length
+				if(rrr<count-1){
+					rrr+=1
+					}else{rrr=0}
+					$('#first .wrapp').css('display','none')
+					$('#first .wrapp:eq('+rrr+')').fadeIn(200)
+					console.log($('#first .wrapp:eq('+rrr+')'))
+				
+				});
+			});
+			</script>
+			
+			<script>
+			var productnow = 0
+			$(document).ready(function(){
+
+				$("#right_1").click(function () {
+				count = $('#second .rooms_gal').length
+				if(productnow>0){
+					productnow-=1
+					}else{productnow=count-1}
+					$('#second .rooms_gal').css('display','none')
+					$('#second .rooms_gal:eq('+productnow+')').fadeIn(200)
+					console.log($('#second .rooms_gal:eq('+productnow+')'))
+					
+				});
+				
+				$("#left_1").click(function () {
+				count = $('#second .rooms_gal').length	
+				if(productnow<count-1){
+					productnow+=1
+					}else{productnow=0}
+					$('#second .rooms_gal').css('display','none')
+					$('#second .rooms_gal:eq('+productnow+')').fadeIn(200)
+					console.log($('#second .rooms_gal:eq('+productnow+')'))
+				
+				});
+			});
+			</script>
 
     </head>
 
@@ -101,27 +154,32 @@
 		</div>
 	
 		<div class="wrap" id="first">
-			<div class="b-1">
-				<a href="#about_us.php"><div><img src="img/l4.png"></div>
+			<div class="b-1 wrapp">
+				<a href="about_us.php"><div><img src="img/l4.png"></div>
 				<h3><?php echo $language[$lang]['about_us'] ?></h3></a>
 			</div>
-			<div class="b-2">
+			<div class="b-2 wrapp">
 				<a href="rooms.php"><div><img src="img/l2.png"></div>
 				<h3><?php echo $language[$lang]['rooms'] ?></h3></a>
 			</div>
-			<div class="b-3">
+			<div class="b-3 wrapp">
 				<a href="http://restaurant-gutenbergs.lv/?lang="><div><img src="img/l3.png"></div>
 				<h3><?php echo $language[$lang]['restaurant'] ?></h3></a>
 			</div>
-			<div class="b-4">
+			<div class="b-4 wrapp">
 				<a href="conference_hall.php"><div><img src="img/l1.png"></div>
 				<h3><?php echo $language[$lang]['conference'] ?></h3></a>
 			</div>
-			<div class="b-8">
-				<a href=""><div><img src="img/l1.png"></div>
+			<div class="b-8 wrapp">
+				<a href="gallery.php"><div><img src="img/l1.png"></div>
 				<h3><?php echo $language[$lang]['gallery'] ?></h3></a>
 			</div>
 		</div>
+		
+			<div class="wrap_buttons_rl">
+				<div id="right_"><img src="img/left.png"></div>
+				<div id="left_"><img src="img/right.png"></div>
+			</div>
 
 		<div class="header">
 			<img src="img/1.png">
@@ -129,16 +187,21 @@
 		</div>
 		
 		<div class="wrap" id="second">
-			<a href="rooms.php"><div class="b-5">
-				<div><h5><?php echo $language[$lang]['stand_room'] ?></h5></div>
-			</div></a>
-			<a href="rooms.php"><div class="b-6">
-				<div><h5><?php echo $language[$lang]['jun_room'] ?></h5></div>
-			</div></a>
-			<a href="rooms.php"><div class="b-7">
-				<div><h5><?php echo $language[$lang]['apm_lux'] ?></h5></div>
-			</div></a>
+			<div class="b-5 rooms_gal">
+				<a href="rooms.php"><div><h5><?php echo $language[$lang]['stand_room'] ?></h5></div></a>
+			</div>
+			<div class="b-6 rooms_gal">
+				<a href="rooms.php"><div><h5><?php echo $language[$lang]['jun_room'] ?></h5></div></a>
+			</div>
+			<div class="b-7 rooms_gal">
+				<a href="rooms.php"><div><h5><?php echo $language[$lang]['apm_lux'] ?></h5></div></a>
+			</div>
 		</div>
+	
+			<div class="wrap_buttons_rl">
+				<div id="right_1"><img src="img/left.png"></div>
+				<div id="left_1"><img src="img/right.png"></div>
+			</div>
 	
 		<div class="header">
 			<img src="img/1.png">
@@ -174,7 +237,14 @@
 		</div>
 		
 		<div id="contact_us">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.9812809355444!2d24.10117131627591!3d56.94912198089018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd75e0742ab%3A0xa1c034205955fe93!2sHotel+Gutenbergs!5e0!3m2!1sru!2sru!4v1508762046686" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.9812809355444!2d24.10117131627591!3d56.94912198089018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd75e0742ab%3A0xa1c034205955fe93!2sHotel+Gutenbergs!5e0!3m2!1sru!2sru!4v1508762046686" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="videodiv">
+				<video width="100%" autoplay loop>
+				   <source src="video/Gutenberg _flyaway.mp4" type='video/mp4'>
+				</video>
+			</div>
 		</div>
 	
 		<?php include 'assets/footer.php'; ?>

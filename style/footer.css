@@ -12,22 +12,29 @@ footer{
     display: -webkit-flex;
     display: flex;
     justify-content: space-around;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 #footer_logo img{
-	width: 4vw;
+	width: 6.5vw;
+	padding-right: 1vw;
+}
+.footer_links img{
+	width:1vw;
+    padding-right: 0.5vw;
 }
 .footer_links{
-
+    margin-top: 0.5vw;
+    width: 18%;
 }
 .footer_links h3{
 	margin: 0;
-	color: rgb(176, 145, 93);
+	color: #b0915d;
 	font-size: 0.8vw;
 	text-transform : uppercase;
 	margin-bottom: 1vw;
+	letter-spacing: 0.1vw;
 }
 .footer_links a{
 	cursor: pointer;
@@ -37,7 +44,7 @@ footer{
 	color: orange;
 }
 .footer_links p{
-	color: rgb(176, 145, 93);
+	color: #b0915d;
     font-size: 0.8vw;
 	margin:0;
 	opacity: 0.8;
@@ -54,10 +61,15 @@ footer{
     padding-right: 0.3vw;
 }
 .d img {
-    width: 4.5vw;
+	width: 3.8vw !important;
+    height: 2.5vw !important;
     padding-right: 1vw;
 }
 @media screen and (max-width: 900px){
+.footer_links img{
+	width: 3vw;
+	padding-right: 1vw;
+}
 footer{
 	text-align: center;
 }
@@ -70,6 +82,7 @@ footer{
 }
 #footer_logo img {
     width: 25vw;
+	padding-right: unset;
 }
 .footer_links h3 {
     font-size: 4vw;
@@ -82,13 +95,17 @@ footer{
 }
 .wraping{
 	justify-content: center;
+	padding-bottom: 6vw;
 }
 .c img{
 	width: 5vw;
     padding: 2vw;
 }
 .d img {
-    width: 15vw;
-    padding: 2vw;
+    width: 20vw !important;
+    height: 12vw !important;
+}
+.footer_links{
+	width: 100%;
 }
 }

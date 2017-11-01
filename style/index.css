@@ -42,6 +42,22 @@ video{
 }
 #contact_us{
 	height: 25vw;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+#contact_us div{
+	width: 50%;
+}
+#contact_us video{
+	width: 100%;
+    height: 25vw;
+    position: unset;
+    top: unset;
+    -webkit-transform: scaleX(1.12);
+    -moz-transform: scaleX(1.12);
 }
 .wrap{
 	display: -webkit-box;
@@ -160,7 +176,7 @@ video{
 .b-2{background-image: url(../img/gal/2.jpg);}
 .b-3{background-image: url(../img/gal/3.jpg);}
 .b-4{background-image: url(../img/gal/1.jpg);}
-.b-8{background-image: url(../img/gal/2.jpg);}
+.b-8{background-image: url(../img/gal/9.jpg);}
 
 .b-5{background-image: url(../img/gal/5.jpg);}
 .b-6{background-image: url(../img/gal/6.jpg);}
@@ -177,7 +193,24 @@ video{
     letter-spacing: 0.1vw;
 	font-size: 12px !important;
 }
+.wrap_buttons_rl{display:none;}
+
 @media screen and (max-width: 900px){
+.wrap_buttons_rl{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -75vw;
+}
+.wrap_buttons_rl img{
+	width: 10vw !important;
+    margin: 0 !important;
+	cursor: pointer;
+}
 .header {
     padding-top: 10vw;
     padding-bottom: 10vw;
@@ -202,7 +235,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
 }
-.b-1, .b-2, .b-3, .b-4, .b8 {
+.b-1, .b-2, .b-3, .b-4, .b-8 {
     width: 100%;
     height: 150vw;
     margin: 0;
@@ -211,13 +244,16 @@ h2 {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    align-items: center;
-    justify-content: center;
 	flex-direction: column;
+	position: relative;
 }
 .b-2, .b-3, .b-4, .b-6, .b-7, .b-8{display:none;}
 .b-1 div, .b-2 div, .b-3 div, .b-4 div , .b-8 div{
     height: unset;
+}
+.wrapp a{
+    top: 65vw;
+    position: relative;
 }
 #first img {
     width: 10vw;
@@ -262,4 +298,10 @@ h2 {
     margin-bottom: 0 !important;
 }
 video{display:none;}
+#contact_us div{
+	width: 100%;
+}
+.videodiv{
+	display:none;
+}
 }

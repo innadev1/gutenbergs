@@ -1,0 +1,125 @@
+header{
+    background-image: none !important;
+	height: auto !important;
+}
+.round_buttons, #form {
+    display: none;
+}
+#Left, #Right{
+	position: absolute;
+}
+#Left img, #Right img{
+	width: 3vw;
+	padding: 0.5vw;
+	cursor: pointer;
+	opacity: 0.5;
+}
+#Left img:hover, #Right img:hover{
+	opacity: 1;
+}
+#Left{
+	top: 20vw;
+    left: 0;
+}
+#Right{
+    right: 0;
+    top: 20vw;
+}
+#slider_{
+	width: 80%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 3.2vw;
+    margin-bottom: 3vw;
+}
+#thumbs {
+	padding-top: 1vw;
+    width: 100%;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#panel{
+	height: 45vw;
+    width: 100%;
+}
+#largeImage {
+    width: 100%;
+    height: 100%;
+}
+#thumbs img {
+    cursor: pointer;
+    width: 18%;
+    height: 9vw;
+	padding: 0.5vw;
+}
+/*#slider-wrap{
+	width:99%; 
+}
+#slider{
+	width: 80%;
+    height: 40vw;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10%;
+    margin-left: 10%;
+	margin-top: 1.3vw;
+}
+.slide{
+	width:100%;
+	height:100%;
+}
+.sli-links{
+	margin-top:10px;
+	text-align:center;
+}
+.sli-links .control-slide{
+	margin:2px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	overflow:hidden;
+	text-indent:-9999px;
+	background:url(radioBg.png) center bottom no-repeat;
+}
+.sli-links .control-slide:hover{
+	cursor:pointer;
+	background-position:center center;
+}
+.sli-links .control-slide.active{
+	background-position:center top;
+}
+#prewbutton, #nextbutton{
+    display: block;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    text-indent: -999px;
+    background: url(../img/left.png) left center no-repeat;
+    opacity: 0.8;
+    z-index: 1;
+    outline: none !important;
+}
+#prewbutton{left:0px;
+}
+#nextbutton{
+	right:0px;
+	background:url(../img/right.png) right center no-repeat;
+}
+#prewbutton:hover, #nextbutton:hover{
+	opacity:1;
+}*/
+@media screen and (max-width: 900px){
+header{
+    background-image: url(../img/background_3_mobile.jpg) !important;
+}
+}
