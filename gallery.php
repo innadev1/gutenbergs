@@ -2,7 +2,7 @@
     <head>     
 		<link rel="stylesheet" type="text/css" href="style/gallery.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
         <title>gallery</title>
     </head>
 
@@ -15,8 +15,10 @@
 		
 		<div id="Left"><img src="img/left.png"></div>
 			<div id="panel">
+				<div id="close"><img src="img/close.png"></div>
 				<img id="largeImage" src="img/gallery/1.jpg"/>
 			</div>
+			<div id="bg_layer"></div>
 		<div id="Right"><img src="img/right.png"></div>
 			<div id="thumbs">
 				<img class="photo" src="img/gallery/1.jpg" alt="1st image description" />
@@ -91,6 +93,33 @@
 				<!--$('#description').html($(this).attr('alt'));-->
 			});
 
+		</script>
+		<script>
+		$(document).ready(function(){
+			if ($('body').width() <= 900) {
+				
+				
+			$('#thumbs').delegate('img','click', function(){
+				now = $(this).index()
+			$("#bg_layer").css("display","block");	
+			$("#panel").css("display","block");
+			$("#Right").css("display","block");
+			$("#Left").css("display","block");
+				
+				$('#largeImage').attr('src',$(this).attr('src'));
+			});	
+			
+			$("#close").click(function () {	
+			$("#panel").css("display","none");
+			$("#Right").css("display","none");
+			$("#Left").css("display","none");
+			$("#bg_layer").css("display","none");			
+			});
+			
+			
+
+			}
+		});
 		</script>
 		
 <!--	<div id="slider-wrap">
