@@ -158,7 +158,7 @@ header{
 }
 @media screen and (min-width: 1500px){
 #navigation li {
-    font-size: 0.6vw;
+    font-size: 0.8vw;
 }
 }
 @media screen and (max-width: 900px){

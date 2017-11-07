@@ -16,7 +16,7 @@
 			<h3><?php echo $language[$lang]['get_in_touch'] ?></h3>
 			<p><img src="img/103.png">Reception: <a href="tel:+371 67814090">+371 67814090</a></p>
 			<p><img src="img/100.png">Restaurant: <a href="tel:+37167211776">+371 67211776</a></p>
-			<p><img src="img/101.png">info@gutenbergshotel.lv</p>
+			<p><img src="img/101.png">hotel@gutenbergs.eu</p>
 		</div>
 		<div class="footer_links">
 			<h3>&nbsp;</h3>

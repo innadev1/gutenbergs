@@ -95,12 +95,12 @@
 	$language['en']['visit'] = 'visit';
 	
 	$language['rus']['call'] = 'звоните';
-    $language['lv']['call'] = 'zvāniet';
+    $language['lv']['call'] = 'zvaniet';
 	$language['en']['call'] = 'call';
 	
-	$language['rus']['get_in_touch'] = 'будьте на связи';
+	$language['rus']['get_in_touch'] = 'СВЯЖИТЕСЬ С НАМИ';
     $language['lv']['get_in_touch'] = 'sazināties ar mums';
-	$language['en']['get_in_touch'] = 'geit in touch';
+	$language['en']['get_in_touch'] = 'get in touch';
 	
 	$language['rus']['latest'] = 'новости';
     $language['lv']['latest'] = 'jaunumi';
@@ -144,7 +144,7 @@
 	$language['lv']['about_us_text1'] = 'Boutique stila viesnīca Vecpilsētas centrā. Slavena ar greznu interjeru, romantisku, vēsturisku stilu un sirsnīgu personālu.';
 	$language['en']['about_us_text1'] = 'Boutique-style hotel in the center of the Old Town. Famous for its gorgeous interior, romantic and historical style, and kind personnel.';
 
-	$language['rus']['about_us_text2'] = '38 уютных по-разному обустроенных номеров. Все удобства – ванна или душ, ТВ, WIFI, телефон, минибар, сейф, в ванной комнате теплый пол и другие экстры. Завтрак входит в цену.';
+	$language['rus']['about_us_text2'] = '38 уютных по-разному обустроенных номеров. Все удобства – ванна или душ, ТВ, WIFI, телефон, минибар, сейф, в ванной комнате теплый пол и другие экстры. <br> Завтрак входит в цену.';
 	$language['lv']['about_us_text2'] = 'Viesnīcā ir 38 mājīgas, dažādi iekārtotas istabas. Visas ērtības - vanna vai duša, Viasat TV, bezmaksas internets, telefons, minibārs, seifs, vannas istabā siltā grīda un citas ekstras. Viesiem brokastis iekļautas cenā.';
 	$language['en']['about_us_text2'] = 'There are 38 cozy rooms of various design. Every convenience – a bath or a shower, TV, WIFI, a phone, a mini-bar, a safe, heated floors in the bathroom and other extras. Breakfast included.';
 
@@ -205,8 +205,8 @@
 		Если Вы поздно прибываете в Ригу или выезжаете очень рано, в регистратуре гостиницы «Gutenbergs» Вас каждый раз будет ждать чашка горячего чая или кофе, бутерброд или сердечная улыбка, которая поможет решить все проблемы.";
 	$language['lv']['for_health_text'] = '10% atlaide SPA salonā, skaistuma rezidence "Bellezza" ,13. janvāra ielā 21. Vairāk informācijas skat. www.Bellezza.lv vai pa tālruni +371 67876555. <br>
 		Izmantot veselības, skaistuma un labsajūtas gūšanai Dienas SPA Aqua Villa , Tirgoņu ielā 11, Vecrīga (5 minūšu gājienā), piedāvā savus pakalpojumus ar 7% atlaidi viesnīcas „Gutenbergs” klientiem. <br>
-		Informācija www.aquavillaspa.lv. vai pa tālruni + 371 67814686,+371 29196349.';
-	$language['en']['for_health_text'] = '10% discount at the SPA and beauty salon "Bellezza" in Oldriga on 13.janvara street 21. For more information please see www.Bellezza.lv or call +371 67876555+371 67876555 <br> Visit the beauty salon, hair-dresser and solarium Agua Villa in 5 minutes walk from the hotel, on 11 Tirgonu Street, 2nd floor. <br> Should you arrive in Riga very late or depart very early, in the reception of the hotel Gutenbergs you will be greeted with a cup of hot tea or coffee, a sandwich and a warm smile which will help solving any problem.';
+		Informācija www.aquavillaspa.lv. vai pa tālruni <br> + 371 67814686, +371 29196349.';
+	$language['en']['for_health_text'] = '10% discount at the SPA and beauty salon "Bellezza" in Oldriga on 13.janvara street 21. For more information please see www.Bellezza.lv or call +371 67876555 +371 67876555 <br> Visit the beauty salon, hair-dresser and solarium Agua Villa in 5 minutes walk from the hotel, on 11 Tirgonu Street, 2nd floor. <br> Should you arrive in Riga very late or depart very early, in the reception of the hotel Gutenbergs you will be greeted with a cup of hot tea or coffee, a sandwich and a warm smile which will help solving any problem.';
 	// 4----------------------------------------------->//
 	$language['rus']['for_disposal'] = 'Для Вашего удобства';
 	$language['lv']['for_disposal'] = 'Jūsu ērtībām';
@@ -257,7 +257,7 @@ $language['lv']['apm_lux_text'] = 'Vienvietīgi vai divvietīgi luksa apartament
 $language['en']['apm_lux_text'] = "Single or double De Luxe apartment with a comfortable anteroom with a guest restroom. Further on from the anteroom – living room with 4 windows, one opens to the very floor. The living room has a comfortable writing cabinet, a chest of drawers, a mini-bar. Behind the bedroom – the second spacious restroom with a bath and heated floor. The living room can host a small party of 6-10 people or serve as a children's bedroom. In the bedroom – a TV, the large king size bed. More conveniences – the same as before.";
 
 
-$language['rus']['book'] = 'Записаться';
+$language['rus']['book'] = 'Бронирование';
 $language['lv']['book'] = 'Pieteikties';
 $language['en']['book'] = 'Book';
 
@@ -299,7 +299,7 @@ $language['rus']['you_ques'] = 'Пожалуйста, введите свой в
 $language['rus']['question'] = 'Вопрос:';
 $language['rus']['name'] = 'Имя:';
 $language['rus']['email'] = 'Эл. адрес:';
-$language['rus']['checkyo'] = 'Проверь почту! ';
+$language['rus']['checkyo'] = 'Мы с вами свяжемся! ПРОВЕРЬТЕ ПОЧТУ!';
 
 $language['lv']['name_t_sh'] = 'Jūsu ievadītais vārds ir par īsu.';
 $language['lv']['only_alph'] = 'Tikai alfabēta burti !';
@@ -308,7 +308,7 @@ $language['lv']['you_ques'] = 'Lūdzu ievadiet savu jautājumu!';
 $language['lv']['question'] = 'Jautājums:';
 $language['lv']['name'] = 'Vārds:';
 $language['lv']['email'] = 'E-pasts:';
-$language['lv']['checkyo'] = 'Pārbaudiet e-pastu!';
+$language['lv']['checkyo'] = 'Mēs ar jums sazināsimies! Pārbaudiet e-pastu!';
 
 $language['en']['name_t_sh'] = 'Name too short.';
 $language['en']['only_alph'] = 'Only alphabet!: ';
@@ -317,7 +317,7 @@ $language['en']['you_ques'] = 'Please enter your question!';
 $language['en']['question'] = 'Question:';
 $language['en']['name'] = 'Name:';
 $language['en']['email'] = 'Email:';
-$language['en']['checkyo'] = 'Check your mail!';
+$language['en']['checkyo'] = 'We will contact with you! CHECK YOUR MAIL!';
 
 $language['lv']['send'] = 'Nosūtīt';
 $language['rus']['send'] = 'Oтправить';

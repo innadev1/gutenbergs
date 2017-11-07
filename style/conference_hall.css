@@ -5,13 +5,6 @@ header{
     display: none;
 }
 
-.bed1{
-	background-image: url(../img/gal/8.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-	width: 65%;
-	height: 100%;
-}
 .main{
 	width: 65vw;
     height: 25vw;
@@ -78,6 +71,46 @@ header{
 .flex h2{
 	line-height: unset;
 	width: 30%;
+}
+.bed1{
+	width: 65%;
+	height: 100%;
+	position: relative;
+}
+#bed1-1{
+	background-image: url(../img/gal/8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+#bed1-2{
+	display: none;
+	background-image: url(../img/beds/10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+#bed1-3{
+	display: none;
+	background-image: url(../img/beds/11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+.triggers{
+	position: absolute;
+    display: flex;
+    top: 10vw;
+    justify-content: space-between;
+    width: 100%;
+}
+.triggers img{
+	width: 2vw;
+    padding: 1vw;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 900px){
