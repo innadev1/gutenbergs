@@ -70,13 +70,14 @@
 ?>
 
 <html>
-    <head>     
+    <head>
+		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style/index.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
-        <title>gutenberg</title>
+        <title>Hotel Gutenbergs</title>
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 

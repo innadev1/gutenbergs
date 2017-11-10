@@ -258,7 +258,7 @@ $language['en']['apm_lux_text'] = "Single or double De Luxe apartment with a com
 
 
 $language['rus']['book'] = 'Бронирование';
-$language['lv']['book'] = 'Pieteikties';
+$language['lv']['book'] = 'Rezervēt';
 $language['en']['book'] = 'Book';
 
 // CONTACTS

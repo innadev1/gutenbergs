@@ -53,7 +53,7 @@
 			</div>
 		</div>
 		
-		<div>
+		<div class="fb_">
 			<div id="fb-root"></div>
 			<script>(function(d, s, id) {
 			  var js, fjs = d.getElementsByTagName(s)[0];
