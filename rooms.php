@@ -125,6 +125,9 @@
 				<div class="bed2">
 					<div class="bed-2-2" id="bed2-1"></div>
 					<div class="bed-2-2" id="bed2-2"></div>
+					<div class="bed-2-2" id="bed2-3"></div>
+					<div class="bed-2-2" id="bed2-4"></div>
+					<div class="bed-2-2" id="bed2-5"></div>
 					
 					<div class="triggers">
 						<div id="Right2"><img src="img/previous.png"></div>
